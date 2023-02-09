@@ -89,7 +89,7 @@ selector {
 
 ### CSS Selectors
 
-CSS selectors are used to target HTML elements in the DOM(Document Object Model). DOM is a tree-like structure that represents the HTML elements in a web page. They are used to select the elements you want to style. Selector can be based on element type (e.g. `h1`, `p`, `div`), class (e.g. `.class-name`), ID (e.g. `#id-name`), attribute (e.g. `[attribute-name]`), pseudo-class (e.g. `:hover`), pseudo-element (e.g. `::first-line`), or descendant selector (e.g. `nav > ul > li`).
+CSS selectors are used to target HTML elements in the DOM(Document Object Model). DOM is a tree-like structure that represents the HTML elements in a web page. They are used to select the elements you want to style. Selector can be based on element type (e.g. `h1`, `p`, `div`), class (e.g. `.class-name`), ID (e.g. `#id-name`), attribute (e.g. `[attribute-name]`), pseudo-class (e.g. `:hover`), pseudo-element (e.g. `::first-line`), or descendant (e.g. `div p`).
 
 Here are some examples of CSS selectors:
 
@@ -106,6 +106,31 @@ h1 {
 
 /* Selects all elements with id "id-name" */
 #id-name {
+    color: red;
+}
+
+/* Selects all elements with attribute "attribute-name" */
+[attribute-name] {
+    color: red;
+}
+
+/* Selects all elements with attribute "attribute-name" that has value "attribute-value" */
+[attribute-name="attribute-value"] {
+    color: red;
+}
+
+/* Selects all elements with pseudo-class "hover" */
+:hover {
+    color: red;
+}
+
+/* Selects all elements with pseudo-element "first-line" */
+::first-line {
+    color: red;
+}
+
+/* Selects all elements with class name "class-name" that are descendants of elements with class name "parent-class-name" */
+.parent-class-name .class-name {
     color: red;
 }
 ```
