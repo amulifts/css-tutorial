@@ -89,7 +89,7 @@ selector {
 
 ### CSS Selectors
 
-CSS selectors are used to target HTML elements in the DOM(Document Object Model). DOM is a tree-like structure that represents the HTML elements in a web page. They are used to select the elements you want to style. Selector can be based on element type (e.g. `h1`, `p`, `div`), class (e.g. `.class-name`), ID (e.g. `#id-name`), attribute (e.g. `[attribute-name]`), pseudo-class (e.g. `:hover`), pseudo-element (e.g. `::first-line`), or descendant (e.g. `div p`).
+CSS selectors are used to target HTML elements in the DOM(Document Object Model). DOM is a tree-like structure that represents the HTML elements in a web page. They are used to select the elements you want to style. Selector can be based on element type (e.g. `h1`, `p`, `div`), class (e.g. `.class-name`) or ID (e.g. `#id-name`).
 
 Here are some examples of CSS selectors:
 
@@ -108,32 +108,19 @@ h1 {
 #id-name {
     color: red;
 }
-
-/* Selects all elements with attribute "attribute-name" */
-[attribute-name] {
-    color: red;
-}
-
-/* Selects all elements with attribute "attribute-name" that has value "attribute-value" */
-[attribute-name="attribute-value"] {
-    color: red;
-}
-
-/* Selects all elements with pseudo-class "hover" */
-:hover {
-    color: red;
-}
-
-/* Selects all elements with pseudo-element "first-line" */
-::first-line {
-    color: red;
-}
-
-/* Selects all elements with class name "class-name" that are descendants of elements with class name "parent-class-name" */
-.parent-class-name .class-name {
-    color: red;
-}
 ```
+
+There are so many other selectors available. Here are some of the most commonly used CSS selectors:
+
+- **Universal selector** - `*`
+- **Type selector** - `h1`, `p`, `div`
+- **Class selector** - `.class-name`
+- **ID selector** - `#id-name`
+- **Attribute selector** - `[attribute]`, `[attribute=value]`, `[attribute~=value]`, `[attribute|=value]`
+- **Pseudo-class selector** - `:hover`, `:active`, `:focus`, `:first-child`, `:last-child`, `:nth-child()`
+- **Pseudo-element selector** - `::first-letter`, `::first-line`, `::before`, `::after`
+
+We will learn more about these later in this tutorial.
 
 <a name="boxmodel"></a>
 
@@ -351,6 +338,76 @@ div {
 ```
 
 You can try out other color and background properties.
+
+<a name="borders"></a>
+
+### CSS Borders
+
+A wide range of CSS properties can be used to style borders. Here are some of the most commonly used properties:
+
+| Property | Description |
+| --- | --- |
+| border | A shorthand property for setting all the border properties at once |
+| border-width | Specifies the width of the border |
+| border-style | Specifies the style of the border |
+| border-color | Specifies the color of the border |
+| border-radius | Specifies the radius of the border |
+
+These properties can be used to style borders in a variety of ways. Here are some examples:
+
+```css
+/* Sets the border width to 5px */
+div {
+    border-width: 5px;
+}
+```
+
+You can try out other border properties.
+
+<a name="marginsandpadding"></a>
+
+### CSS Margins and Padding
+
+`Margin` is the space outside the border of an element, while `padding` is the space between the border of an element and its content. Both can be controlled using CSS, and they can be set using specific values for each of the four sides of an element (top, right, bottom, left). Here are some examples:
+
+```css
+p {
+    margin: 20px;
+    padding: 10px;
+}
+```
+
+In this example, a margin of 20 pixels has been set for all four sides of the p element, and a padding of 10 pixels has been set for all four sides of the p element. This will create 20 pixels of space outside the p element, and 10 pixels of space inside the p element.
+
+The above example can also be written like this:
+
+```css
+p {
+    margin: 20px 20px 20px 20px;
+    padding: 10px 10px 10px 10px;
+}
+```
+
+<a name="units"></a>
+
+### CSS Units of Measurement
+
+CSS uses a variety of units of measurement to specify the size and length of elements in a web page. These units can be divided into two categories: absolute and relative. `Absolute units` are fixed, and do not change based on the size of the screen or the browser window. `Relative units` are relative to the size of the screen or the browser window, and will change based on the size of the screen or the browser window.
+
+Here are some of the most commonly used units of measurement:
+
+- **px** - Pixels are absolute units of measurement. One pixel is equal to one dot on the screen. This is the default unit of measurement for CSS.
+- **em** - Ems are relative units of measurement. One em is equal to the current font size. For example, if the current font size is 16px, then 1em is equal to 16px.
+- **rem** - Rems are relative units of measurement. One rem is equal to the font size of the root element. For example, if the font size of the root element is 16px, then 1rem is equal to 16px.
+- **%** - Percentages are relative units of measurement. One percent is equal to 1% of the size of the parent element. For example, if the width of the parent element is 1000px, then 50% is equal to 500px.
+- **vh** - Viewport height is a relative unit of measurement. One viewport height is equal to 1% of the height of the browser window. For example, if the height of the browser window is 1000px, then 50vh is equal to 500px.
+- **vw** - Viewport width is a relative unit of measurement. One viewport width is equal to 1% of the width of the browser window. For example, if the width of the browser window is 1000px, then 50vw is equal to 500px.
+- **vmin** - Viewport minimum is a relative unit of measurement. One viewport minimum is equal to 1% of the smaller of the height or width of the browser window. For example, if the height of the browser window is 1000px and the width of the browser window is 500px, then 50vmin is equal to 250px.
+- **vmax** - Viewport maximum is a relative unit of measurement. One viewport maximum is equal to 1% of the larger of the height or width of the browser window. For example, if the height of the browser window is 1000px and the width of the browser window is 500px, then 50vmax is equal to 500px.
+
+# INTERMEDIATE
+
+
 
 
 
