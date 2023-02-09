@@ -11,7 +11,6 @@ A comprehensive guide to CSS, covering topics from the basics of selectors and b
 		* [CSS Selectors](#selectors)
 		* [CSS Box Model](#boxmodel)
         * [CSS Display and Visibility](#displayandvisibility)
-        * [CSS Positioning](#positioning)
         * [CSS Floats and Clearfix](#floatsandclearfix)
         * [CSS Text and Font Properties](#textandfontproperties)
         * [CSS Colors and Backgrounds](#colorsandbackgrounds)
@@ -182,34 +181,6 @@ Here's an example of CSS display and visibility:
     visibility: collapse;
 }
 ```
-
-<a name="positioning"></a>
-
-### CSS Positioning
-
-The CSS position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). It is a very important property in CSS as it is used to control the layout of multiple elements on a web page.
-
-The position property can have one of the following values:
-
-- **static** - This is the default value. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
-
-- **relative** - An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
-
-- **fixed** - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. A fixed element does not leave a gap in the page where it would normally have been located.
-
-- **absolute** - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
-
-- **sticky** - An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
-
-Here are some examples of CSS positioning:
-
-```css
-div {
-    position: static;
-}
-```
-
-You can try out other values of position property.
 
 <a name="floatsandclearfix"></a>
 
@@ -603,8 +574,121 @@ Here's an example of a `CSS animation`:
 }
 ```
 
+<a name="mediaqueries"></a>
 
+### CSS Media Queries
 
+CSS Media Queries is a technique for adapting the presentation of a website based on different conditions such as screen size, device type, and orientation. It allows you to create different styles for different devices, making your website more responsive and accessible.
+
+A media query consists of a media type, and zero or more expressions that check for the conditions of specific media features. For example, you can use a media query to specify styles only for devices with a screen width of at least 720 pixels:
+
+```css
+@media screen and (min-width: 720px) {
+  /* Styles for devices with a screen width of at least 720px */
+}
+```
+
+You can also use media queries to specify styles based on other conditions such as device type, orientation, and aspect ratio. This makes it possible to create a single HTML document that can be displayed optimally on a wide range of devices, from desktop computers to smartphones and everything in between.
+
+Here's an example of a `CSS media query`:
+
+```css
+/* Default styles for all devices */
+body {
+  font-size: 16px;
+  background-color: lightgrey;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 720px) {
+  body {
+    font-size: 14px;
+    background-color: lightblue;
+  }
+}
+```
+
+In the above example, the default styles for the body element are defined first. Then, a media query is used to specify styles for devices with a screen width of 720 pixels or less. In this case, the font size and background color of the body element are changed.
+
+<a name="#pseudo"></a>
+
+### CSS Pseudo-classes and Pseudo-elements
+
+CSS pseudo-classes and pseudo-elements are special keywords added to selectors that allow you to apply styles to elements based on their state or location within the document.
+
+Pseudo-classes are keywords added to selectors that specify a special state of the selected element. For example, the :hover pseudo-class can be used to specify a style for when the mouse cursor is hovering over an element.
+
+Here's an example of a `CSS pseudo-class`:
+
+```html
+<button class="button">Click Me</button>
+```
+
+```css
+.button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+```
+
+The above example uses the :hover pseudo-class to specify a style for when the mouse cursor is hovering over the button.
+
+Pseudo-elements are keywords added to selectors that allow you to style a specific part of the selected element. For example, the ::first-letter pseudo-element can be used to specify a style for the first letter of a paragraph.
+
+Here's an example of a `CSS pseudo-element`:
+
+```html
+<p class="paragraph">
+  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+</p>
+
+```
+
+```css
+.paragraph {
+  font-size: 16px;
+}
+
+.paragraph::first-letter {
+  font-size: 24px;
+  font-weight: bold;
+}
+```
+
+The above example uses the ::first-letter pseudo-element to specify a style for the first letter of the paragraph.
+
+<a name="positioning"></a>
+
+### CSS Positioning
+
+The CSS position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). It is a very important property in CSS as it is used to control the layout of multiple elements on a web page.
+
+The position property can have one of the following values:
+
+- **static** - This is the default value. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+
+- **relative** - An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+- **fixed** - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. A fixed element does not leave a gap in the page where it would normally have been located.
+
+- **absolute** - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+- **sticky** - An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Here are some examples of CSS positioning:
+
+```css
+div {
+    position: static;
+}
+```
+
+You can try out other values of position property.
 
 
 
