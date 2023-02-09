@@ -409,7 +409,7 @@ Here are some of the most commonly used units of measurement:
 
 <a name="flexbox"></a>
 
-## CSS Flexbox
+### CSS Flexbox
 
 CSS Flexbox is a layout mode in CSS that makes it possible to arrange elements in one-dimensional, either row or column, layouts and also distribute space between elements in a more flexible and efficient way than traditional layout methods, such as block or inline-block.
 
@@ -460,7 +460,7 @@ With these basic Flexbox properties, you can create a range of layouts with ease
 
 <a name="grid"></a>
 
-## CSS Grid
+### CSS Grid
 
 CSS Grid is a layout system that allows developers to create a grid structure for their web pages. It provides a way to define rows and columns in a web page, making it possible to place elements into specific grid cells and arrange them in a specific way.
 
@@ -523,6 +523,85 @@ The above example can be further simplified by using the **repeat** function:
 
 The **repeat** function takes two parameters: the number of times to repeat the value, and the value to repeat. In the above example, the **repeat** function is used to repeat the **1fr** value twice for the **grid-template-rows** property, and three times for the **grid-template-columns** property.
 
+<a name="transitionsandanimations"></a>
+
+### CSS Transitions and Animations
+
+CSS Transitions allow you to change the properties of an element smoothly from one state to another. For example, you can use CSS transitions to smoothly change the background color of a button when it is hovered over by the mouse cursor. Transitions are defined using the transition property, which takes several parameters such as the property to be transitioned, the duration of the transition, and the type of transition (e.g., linear, ease-in, ease-out).
+
+Here's an example of a `CSS transition`:
+
+```html
+<button class="button">Click Me</button>
+```
+
+```css
+.button {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  padding: 10px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.button:hover {
+  background-color: #ddd;
+}
+```
+
+CSS Animations, on the other hand, allow you to create more complex animations, such as a bouncing ball or a rotating wheel. Animations are defined using the @keyframes rule, which specifies the intermediate states of the animation and the styles for those states.
+
+Here's an example of a `CSS animation`:
+
+```html
+<div class="ball"></div>
+```
+
+```css
+/* CSS for the bouncing ball animation */
+.ball {
+  width: 50px;
+  height: 50px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(100px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+```
+
+```css
+/* CSS for the left-to-right moving ball animation */
+.ball {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 50%;
+    position: relative;
+    animation: move 2s infinite;
+}
+@keyframes move {
+    0% {
+        left: 0;
+    }
+    50% {
+        left: 300px;
+    }
+    100% {
+        left: 0;
+    }
+}
+```
 
 
 
