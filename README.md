@@ -407,6 +407,60 @@ Here are some of the most commonly used units of measurement:
 
 # INTERMEDIATE
 
+<a name="flexbox"></a>
+
+## CSS Flexbox
+
+CSS Flexbox is a layout mode in CSS that makes it possible to arrange elements in one-dimensional, either row or column, layouts and also distribute space between elements in a more flexible and efficient way than traditional layout methods, such as block or inline-block.
+
+With Flexbox, you can control the direction of elements (row or column), their alignment (start, end, center, space between, etc.), their order, and how they grow or shrink to fill available space.
+
+Here's an example of a Flexbox layout:
+
+```html
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+```
+
+```css
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.item {
+  flex: 1;
+}
+```
+
+In this example, the .container class sets the container to use Flexbox as its layout mode. The flex-direction property sets the direction of elements to be in a row. The align-items property aligns all child elements to the center of the container. The justify-content property distributes space between the child elements evenly.
+
+The .item class sets the flex property to 1, which means that each item will take up an equal amount of space within the container.
+
+With these basic Flexbox properties, you can create a range of layouts with ease. However, there are many other properties you can use to control the behavior of Flexbox elements, and you can find more information in the official `Flexbox documentation`. Some of the more commonly used properties with only titles are:
+
+- **flex-direction** - Sets the direction of elements to be in a row or column.
+- **align-items** - Aligns all child elements to the start, end, center, or stretch of the container.
+- **justify-content** - Distributes space between the child elements evenly, or to the start, end, or center of the container.
+- **flex-wrap** - Sets whether child elements wrap to the next line or not.
+- **flex-flow** - A shorthand property for the flex-direction and flex-wrap properties.
+- **order** - Sets the order of child elements.
+- **flex-grow** - Sets the amount of space child elements should take up within the container.
+- **flex-shrink** - Sets the amount of space child elements should take up within the container when the container is smaller than the sum of the child elements.
+- **flex-basis** - Sets the initial size of child elements.
+- **align-self** - Aligns a single child element to the start, end, center, or stretch of the container.
+- **align-content** - Aligns all child elements to the start, end, center, or stretch of the container when there is extra space in the cross-axis.
+
+
+
+
 
 
 
