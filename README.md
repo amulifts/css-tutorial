@@ -259,6 +259,7 @@ And here's an example of a multi-column layout using floats:
     <img src="image1.jpg" alt="Image 1">
     <p>Some text.</p>
 </div>
+```
 
 However, floating elements can sometimes cause unexpected behavior and layout issues, such as elements being moved out of their parent container or text overlapping floating elements. To fix these issues, a clearfix solution is often used.
 
@@ -291,6 +292,7 @@ And then adding the clearfix class to the parent container, like this:
     <div class="element">Element 1</div>
     <div class="element">Element 2</div>
 </div>
+```
 
 <a name="textandfontproperties"></a>
 
