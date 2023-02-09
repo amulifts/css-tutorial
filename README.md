@@ -18,7 +18,7 @@ A comprehensive guide to CSS, covering topics from the basics of selectors and b
         * [CSS Margins and Padding](#marginsandpadding)
         * [CSS Units of Measurement](#units)
 	* INTERMEDIATE
-		* CSS Flexbox](#flexbox)
+		* [CSS Flexbox](#flexbox)
         * [CSS Grid](#grid)
         * [CSS Transitions and Animations](#transitionsandanimations)
         * [CSS Media Queries](#mediaqueries)
@@ -123,8 +123,7 @@ The CSS box model is a concept that describe the layout of HTML elements on a we
 
 - **Margin** - Clears an area outside the border. The margin is transparent.
 
-![CSS Box Model](https://i.imgur.com/0ZQ9Z9M.png)
-
+![CSS Box Model](https://github.com/amulifts/css-tutorial/blob/main/images/boxmodel.png)
 
 
 <a name = "conclusion"></a>
