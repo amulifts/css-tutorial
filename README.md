@@ -157,6 +157,20 @@ The CSS visibility property specifies whether or not an element is visible. The 
 
 - **collapse** - This makes the element invisible, and it does not take up space in the layout.
 
+Here's an example of CSS display and visibility:
+
+```css
+/* This makes the element invisible, but it still takes up space in the layout */
+.hidden {
+    display: none;
+}
+
+/* This makes the element invisible, and it does not take up space in the layout */
+.collapsed {
+    visibility: collapse;
+}
+```
+
 <a name="positioning"></a>
 
 ### CSS Positioning
