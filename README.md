@@ -889,37 +889,42 @@ All three CSS preprocessors provide a way for developers to write more advanced 
 
 Example of Sass code:
 
-```scss
-$main-color: #ff0000;
-$main-font: Arial, Helvetica, sans-serif;
+```sass
+$primary-color: #4d4d4d;
+
+body {
+  background-color: $primary-color;
+}
 
 h1 {
-  color: $main-color;
-  font-family: $main-font;
+  color: $primary-color;
 }
 ```
 
 Example of Less code:
 
 ```less
-@main-color: #ff0000;
-@main-font: Arial, Helvetica, sans-serif;
+@primary-color: #4d4d4d;
+
+body {
+  background-color: @primary-color;
+}
 
 h1 {
-  color: @main-color;
-  font-family: @main-font;
+  color: @primary-color;
 }
 ```
 
 Example of Stylus code:
 
 ```stylus
-$main-color = #ff0000
-$main-font = Arial, Helvetica, sans-serif
+primary-color = #4d4d4d
+
+body
+  background-color: primary-color
 
 h1
-  color: $main-color
-  font-family: $main-font
+  color: primary-color
 ```
 
 All three CSS preprocessors provide a way for developers to write more advanced CSS code, but each has its own unique features and syntax. When choosing a CSS preprocessor, it is important to consider the specific needs of your project, as well as your personal preference and experience with the different options.
