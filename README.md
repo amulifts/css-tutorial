@@ -889,7 +889,7 @@ All three CSS preprocessors provide a way for developers to write more advanced 
 
 Example of Sass code:
 
-```sass
+```scss
 $primary-color: #4d4d4d;
 
 body {
