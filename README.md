@@ -112,7 +112,7 @@ h1 {
 There are so many other selectors available. Here are some of the most commonly used CSS selectors:
 
 - **Universal selector** - `*`
-- **Type selector** - `h1`, `p`, `div`
+- **Element Type selector** - `h1`, `p`, `div`
 - **Class selector** - `.class-name`
 - **ID selector** - `#id-name`
 - **Attribute selector** - `[attribute]`, `[attribute=value]`, `[attribute~=value]`, `[attribute|=value]`
