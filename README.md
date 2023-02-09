@@ -1020,7 +1020,6 @@ CSS Frameworks are pre-made collections of CSS code that you can use to style yo
 | [Semantic UI](https://semantic-ui.com/) | Semantic is a development framework that helps create beautiful, responsive layouts using human-friendly HTML. |
 | [Tailwind CSS](https://tailwindcss.com/) | Tailwind CSS is a utility-first CSS framework for rapidly building custom user interfaces. |
 | [UIKit](https://getuikit.com/) | UIKit is a lightweight and modular front-end framework for developing fast and powerful web interfaces. |
-| [Skeleton](https://getskeleton.com/) | Skeleton is a simple, responsive boilerplate to kickstart any responsive project. |
 
 These are just a few of the most popular CSS Frameworks. There are many more CSS Frameworks available, you can find more lists surfing the web.
 
@@ -1053,6 +1052,11 @@ Then, to style an element, you would add the `btn` and `waves-effect` classes to
 The above code will style the `button` element with the Materialize `waves-effect` class. You can read more about the Materialize framework [here](https://materializecss.com/).
 
 Similarly, You can use other CSS Frameworks by including their CSS files in your HTML document, and then adding the appropriate classes to the elements that you want to style. Make sure to read the documentation for each framework to learn more about how to use it.
+
+<a name="performance"></a>
+
+### CSS Performance Optimization
+
 
 
 
