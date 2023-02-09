@@ -440,11 +440,11 @@ Here's an example of a Flexbox layout:
 }
 ```
 
-In this example, the .container class sets the container to use Flexbox as its layout mode. The flex-direction property sets the direction of elements to be in a row. The align-items property aligns all child elements to the center of the container. The justify-content property distributes space between the child elements evenly.
+In this example, the `.container` class sets the container to use Flexbox as its layout mode. The **flex-direction** property sets the direction of elements to be in a row. The **align-items** property aligns all child elements to the center of the container. The **justify-content** property distributes space between the child elements evenly.
 
-The .item class sets the flex property to 1, which means that each item will take up an equal amount of space within the container.
+The `.item` class sets the **flex** property to 1, which means that each item will take up an equal amount of space within the container.
 
-With these basic Flexbox properties, you can create a range of layouts with ease. However, there are many other properties you can use to control the behavior of Flexbox elements, and you can find more information in the official `Flexbox documentation`. Some of the more commonly used properties with only titles are:
+With these basic Flexbox properties, you can create a range of layouts with ease. However, there are many other properties you can use to control the behavior of Flexbox elements, and you can find more information in the official `Flexbox documentation`. Some of the more commonly used properties are listed below:
 
 - **flex-direction** - Sets the direction of elements to be in a row or column.
 - **align-items** - Aligns all child elements to the start, end, center, or stretch of the container.
@@ -457,6 +457,77 @@ With these basic Flexbox properties, you can create a range of layouts with ease
 - **flex-basis** - Sets the initial size of child elements.
 - **align-self** - Aligns a single child element to the start, end, center, or stretch of the container.
 - **align-content** - Aligns all child elements to the start, end, center, or stretch of the container when there is extra space in the cross-axis.
+
+<a name="grid"></a>
+
+## CSS Grid
+
+CSS Grid is a layout system that allows developers to create a grid structure for their web pages. It provides a way to define rows and columns in a web page, making it possible to place elements into specific grid cells and arrange them in a specific way.
+
+CSS Grid works by defining a grid container that holds all of the grid items. The grid container has properties such as **grid-template-rows**, **grid-template-columns**, and **grid-template-areas** that allow the developer to specify the number of rows, columns, and their sizes. Then, each item in the grid is assigned to a specific row and column using the grid-row and grid-column properties.
+
+Some of the benefits of using CSS Grid include the ability to create complex grid structures, control the size and position of grid items, and the ability to control the flow of content in the grid. Additionally, CSS Grid allows for responsive design, so the grid can be adapted to different screen sizes and devices.
+
+Here's an example of a CSS Grid layout:
+
+```html
+<div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+</div>
+```
+
+```css
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.item {
+  background-color: #eee;
+  border: 1px solid #ccc;
+  text-align: center;
+}
+```
+
+In the above example, the grid container has a `display` property of `grid`, which creates a grid structure. The **grid-template-columns** property specifies that there should be three columns, each with a fraction of the available space (1fr). The **grid-template-rows** property specifies two rows, each with a specific height (1fr and 1fr). Finally, the **grid-gap** property sets the gap between grid items to 10px.
+
+Each grid item is given a class of **grid-item** and has a background color, border, and centered text. By using CSS Grid, you can easily create a grid structure that organizes and aligns your content in a flexible and responsive way.
+
+The above example can be written in a more concise way using the **grid-template** property:
+
+```css
+.container {
+  display: grid;
+  grid-template: 1fr 1fr / 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+```
+
+The **grid-template** property is a shorthand property for the **grid-template-rows**, **grid-template-columns**, and **grid-template-areas** properties.
+
+The above example can be further simplified by using the **repeat** function:
+
+```css
+.container {
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(3, 1fr);
+  grid-gap: 10px;
+}
+```
+
+The **repeat** function takes two parameters: the number of times to repeat the value, and the value to repeat. In the above example, the **repeat** function is used to repeat the **1fr** value twice for the **grid-template-rows** property, and three times for the **grid-template-columns** property.
+
+
+
+
+
+
 
 
 
