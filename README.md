@@ -29,7 +29,7 @@ A comprehensive guide to CSS, covering topics from the basics of selectors and b
         * [CSS Transforms](#transforms)
 	* ADVANCED
         * [CSS Variables](#variables)
-		* [CSS Preprocessors ( Sass, Less, Stylus )](#preprocessors)
+		    * [CSS Preprocessors ( Sass, Less, Stylus )](#preprocessors)
         * [CSS Postprocessors ( PostCSS )](#postprocessors)
         * [CSS Animation Libraries ( Animate.css, Bounce.js, Hover.css )](#animationlibraries)
         * [CSS Frameworks ( Bootstrap, Foundation )](#frameworks)
@@ -809,6 +809,94 @@ Here are some examples of CSS gradients:
 ```
 
 The above example shows how to add a gradient to an element using the **background-image** property and the **linear-gradient** function.
+
+With CSS shadows and gradients, you can add visual interest to your web pages and make them stand out.
+
+<a name = "transforms"></a>
+
+### CSS Transforms
+
+CSS Transforms allow you to change the **shape**, **size**, and **position** of an element in a web page. This can be useful for creating animations, visual effects, and responsive designs. You can use CSS transforms to `translate`, `rotate`, `scale`, and `skew` elements.
+
+- **scale** - specifies the size of the element.
+
+- **rotate** - specifies the rotation of the element.
+
+- **translate** - specifies the position of the element.
+
+- **skew** - specifies the skewing of the element.
+
+Here are some examples of CSS transforms:
+
+```html
+<div class="box"></div>
+```
+
+```css
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    transform: translate(50px, 50px); 
+  }
+```
+
+The above code will move the **.box** element 50 pixels to the right and 50 pixels down from its original position. You can try out other values such as `scale`, `rotate`, and `skew`.
+
+# ADVANCED
+
+<a name = "variables"></a>
+
+### CSS Variables
+
+CSS Variables, also known as CSS Custom Properties, allow you to define variables for CSS values. They are similar to variables in programming languages, and they provide a way to store and reuse values across multiple CSS rules.
+
+While `making CSS variables`, you need to prefix the variable name with two dashes (**--**). The (**--**) is used to differentiate CSS variables from other CSS properties. 
+
+While `accessing CSS variables`, you need to use the **var()** function. The **var()** function takes the name of the variable as its argument.
+
+Here are some examples of CSS variables:
+
+```css
+:root {
+  --main-color: #ff0000;
+  --main-font: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: var(--main-color);
+  font-family: var(--main-font);
+}
+```
+
+In the above example, a variable named **main-color** and **main-font** is defined on the :root pseudo-class, which is the highest level element in the CSS document. The **main-color** variable is used to set the color of the **h1** element, while the **main-font** variable is used to set the font of the **h1** element.
+
+By using CSS variables, you can centralize the values that you use in multiple places, making it easier to manage and maintain your CSS. Additionally, if you need to change the value of a variable, you only need to make the change in one place, and it will be automatically updated everywhere it's used.
+
+<a name = "preprocessors"></a>
+
+### CSS Preprocessors ( Sass, Less, Stylus )
+
+CSS Preprocessors are scripting languages that extend CSS and provide a more convenient and dynamic way of writing and maintaining CSS code. There are many CSS preprocessors available but the most popular ones are `Sass`, `Less`, and `Stylus`.
+
+| Preprocessor | Description |
+| --- | --- |
+| [Sass](https://sass-lang.com/) | Sass is the most popular CSS preprocessor. It is a scripting language that is compiled into CSS. |
+| [Less](http://lesscss.org/) | Less is a CSS preprocessor that is compiled into CSS. |
+| [Stylus](http://stylus-lang.com/) | Stylus is a CSS preprocessor that is compiled into CSS. |
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
