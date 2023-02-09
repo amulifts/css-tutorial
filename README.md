@@ -636,7 +636,7 @@ Here's an example of a `CSS pseudo-class`:
 }
 ```
 
-The above example uses the :hover pseudo-class to specify a style for when the mouse cursor is hovering over the button.
+The above example uses the **:hover pseudo-class** to specify a style for when the mouse cursor is hovering over the button.
 
 Pseudo-elements are keywords added to selectors that allow you to style a specific part of the selected element. For example, the ::first-letter pseudo-element can be used to specify a style for the first letter of a paragraph.
 
@@ -658,9 +658,41 @@ Here's an example of a `CSS pseudo-element`:
   font-size: 24px;
   font-weight: bold;
 }
+
+/* Or */
 ```
 
-The above example uses the ::first-letter pseudo-element to specify a style for the first letter of the paragraph.
+The above example uses the **::first-letter pseudo-element** to specify a style for the first letter of the paragraph.
+
+There are many other pseudo-classes and pseudo-elements that you can use to style your web pages.
+
+Some of the most commonly used `pseudo-classes` are:
+
+| Pseudo-class | Description |
+| --- | --- |
+| :hover | Specifies a style for when the mouse cursor is hovering over an element |
+| :active | Specifies a style for when an element is being activated by the user |
+| :focus | Specifies a style for when an element has focus |
+| :visited | Specifies a style for links that have already been visited |
+| :link | Specifies a style for links that have not yet been visited |
+| :first-child | Specifies a style for the first child of an element |
+| :last-child | Specifies a style for the last child of an element |
+| :nth-child(n) | Specifies a style for every nth child of an element |
+| :not(selector) | Specifies a style for all elements that are not matched by the selector |
+
+Some of the most commonly used `pseudo-elements` are:
+
+| Pseudo-element | Description |
+| --- | --- |
+| ::first-letter | Specifies a style for the first letter of a paragraph |
+| ::first-line | Specifies a style for the first line of a paragraph |
+| ::before | Inserts content before an element |
+| ::after | Inserts content after an element |
+| ::selection | Specifies a style for the selected text |
+| ::placeholder | Specifies a style for the placeholder text |
+| ::value | Specifies a style for the value of an input element |
+
+These are some of the most commonly used pseudo-classes and pseudo-elements. There are many more that you can use to style your web pages.
 
 <a name="positioning"></a>
 
