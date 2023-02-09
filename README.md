@@ -11,6 +11,7 @@ A comprehensive guide to CSS, covering topics from the basics of selectors and b
 		* [CSS Selectors](#selectors)
 		* [CSS Box Model](#boxmodel)
         * [CSS Display and Visibility](#displayandvisibility)
+        * [CSS Positioning](#positioning)
         * [CSS Floats and Clearfix](#floatsandclearfix)
         * [CSS Text and Font Properties](#textandfontproperties)
         * [CSS Colors and Backgrounds](#colorsandbackgrounds)
@@ -88,7 +89,7 @@ selector {
 
 ### CSS Selectors
 
-CSS selectors are used to target HTML elements in the DOM(Document Object Model). DOM is a tree-like structure that represents the HTML elements in a web page. They are used to select the elements you want to style. Selector can be based on element type (e.g. `h1`, `p`, `div`), class (e.g. `.class-name`), or ID (e.g. `#id-name`).
+CSS selectors are used to target HTML elements in the DOM(Document Object Model). DOM is a tree-like structure that represents the HTML elements in a web page. They are used to select the elements you want to style. Selector can be based on element type (e.g. `h1`, `p`, `div`), class (e.g. `.class-name`), ID (e.g. `#id-name`), attribute (e.g. `[attribute-name]`), pseudo-class (e.g. `:hover`), pseudo-element (e.g. `::first-line`), or descendant selector (e.g. `nav > ul > li`).
 
 Here are some examples of CSS selectors:
 
@@ -124,6 +125,110 @@ The CSS box model is a concept that describe the layout of HTML elements on a we
 - **Margin** - Clears an area outside the border. The margin is transparent.
 
 ![CSS Box Model](https://github.com/amulifts/css-tutorial/blob/main/images/boxmodel.png)
+
+In the image above,
+
+- Top left section has CSS properties of the P element.
+- Bottom left section has HTML code of the P element.
+- Top right section shows, Box model diagram of the P element (copied from chrome browser’s developer tool section).
+- Bottom right section shows, actual output of this HTML code.
+
+It's important to note that the width and height properties only apply to the content area. The padding, border, and margin are not included in the width and height of an element.
+
+<a name="displayandvisibility"></a>
+
+### CSS Display and Visibility
+
+The CSS display property specifies the type of rendering box used for an element. The display property can have one of the following values:
+
+- **block** - This generates a block element box that starts on a new line and stretches out to the left and right as far as it can. It is used for elements such as headings (`h1`, `h2`, `h3`, `h4`, `h5`, `h6`), paragraphs (`p`), divs (`div`), and more.
+
+- **inline** - This generates a one-line box that does not start on a new line and stretches out as far as it can in both directions. It is used for elements such as images (`img`), spans (`span`), and more.
+
+- **inline-block** - This generates a one-line box that does not start on a new line and stretches out as far as it can in both directions. It is used for elements such as images (`img`), spans (`span`), and more.
+
+- **none** - This generates no box at all. It is used for elements such as scripts (`script`), meta (`meta`), and more.
+
+The CSS visibility property specifies whether or not an element is visible. The visibility property can have one of the following values:
+
+- **visible** - This makes the element visible.
+
+- **hidden** - This makes the element invisible, but it still takes up space in the layout.
+
+- **collapse** - This makes the element invisible, and it does not take up space in the layout.
+
+<a name="positioning"></a>
+
+### CSS Positioning
+
+The CSS position property specifies the type of positioning method used for an element (static, relative, fixed, absolute or sticky). It is a very important property in CSS as it is used to control the layout of multiple elements on a web page.
+
+The position property can have one of the following values:
+
+- **static** - This is the default value. An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page.
+
+- **relative** - An element with position: relative; is positioned relative to its normal position. Setting the top, right, bottom, and left properties of a relatively positioned element will cause it to be adjusted away from its normal position. Other content will not be adjusted to fit into any gap left by the element.
+
+- **fixed** - An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled. A fixed element does not leave a gap in the page where it would normally have been located.
+
+- **absolute** - An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+
+- **sticky** - An element with position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport - then it "sticks" in place (like position:fixed).
+
+Here are some examples of CSS positioning:
+
+```css
+div {
+    position: static;
+}
+```
+
+You can try out other values of position property.
+
+<a name="floatsandclearfix"></a>
+
+### CSS Floats and Clearfix
+
+In CSS, floating elements are used to allow elements to float to the left or right of their parent container, with text and other elements flowing around them. This can be useful for creating multi-column layouts or for positioning elements such as images and captions. The float property can have one of the following values:
+
+- **left** - This floats the element to the left of its container.
+
+- **right** - This floats the element to the right of its container.
+
+- **none** - This makes the element not float.
+
+- **inherit** - This specifies that the float value should be inherited from the element's parent.
+
+Here are some examples of CSS floats:
+
+```css
+/* Floats the image to the left */
+img {
+    float: left;
+}
+
+/* Floats the image to the right */
+img {
+    float: right;
+}
+```
+
+The CSS clear property specifies on which sides of an element floating elements are not allowed to float. The clear property can have one of the following values:
+
+- **left** - This specifies that no floating element should be to the left of the element.
+
+- **right** - This specifies that no floating element should be to the right of the element.
+
+- **both** - This specifies that no floating element should be to the left or to the right of the element.
+
+- **none** - This specifies that floating elements can be on either side of the element.
+
+- **inherit** - This specifies that the clear value should be inherited from the element's parent.
+
+
+
+
+
 
 
 <a name = "conclusion"></a>
