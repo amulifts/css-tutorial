@@ -885,7 +885,44 @@ CSS Preprocessors are scripting languages that extend CSS and provide a more con
 | [Less](http://lesscss.org/) | Less is a CSS preprocessor that is compiled into CSS. |
 | [Stylus](http://stylus-lang.com/) | Stylus is a CSS preprocessor that is compiled into CSS. |
 
+All three CSS preprocessors provide a way for developers to write more advanced CSS code, but each has its own unique features and syntax. When choosing a CSS preprocessor, it is important to consider the specific needs of your project, as well as your personal preference and experience with the different options.
 
+Example of Sass code:
+
+```scss
+$main-color: #ff0000;
+$main-font: Arial, Helvetica, sans-serif;
+
+h1 {
+  color: $main-color;
+  font-family: $main-font;
+}
+```
+
+Example of Less code:
+
+```less
+@main-color: #ff0000;
+@main-font: Arial, Helvetica, sans-serif;
+
+h1 {
+  color: @main-color;
+  font-family: @main-font;
+}
+```
+
+Example of Stylus code:
+
+```stylus
+$main-color = #ff0000
+$main-font = Arial, Helvetica, sans-serif
+
+h1
+  color: $main-color
+  font-family: $main-font
+```
+
+All three CSS preprocessors provide a way for developers to write more advanced CSS code, but each has its own unique features and syntax. When choosing a CSS preprocessor, it is important to consider the specific needs of your project, as well as your personal preference and experience with the different options.
 
 
 
