@@ -989,6 +989,22 @@ Then, to animate an element, you would add the `animate__animated` and `animate_
 
 The above code will animate the `h1` element with the `bounce` animation. You can read more about the Animate.css library [here](https://animate.style/).
 
+Similarly, to use the Hover.css library, you would include the following code in your HTML document:
+
+```html
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css"/>
+```
+
+Then, to animate an element, you would add the `hvr-bounce-to-right` class to the element. For example:
+
+```html
+<h1 class="hvr-bounce-to-right">Hello World!</h1>
+```
+
+The above code will animate the `h1` element with the `bounce-to-right` animation. You can read more about the Hover.css library [here](https://ianlunn.github.io/Hover/).
+
+Similarly You can use other CSS Animation Libraries by including their CSS files in your HTML document, and then adding the appropriate classes to the elements that you want to animate. Make sure to read the documentation for each library to learn more about how to use it.
+
 
 
 
