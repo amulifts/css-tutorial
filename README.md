@@ -18,7 +18,7 @@ A comprehensive guide to CSS, covering topics from the basics of selectors and b
         * [CSS Margins and Padding](#marginsandpadding)
         * [CSS Units of Measurement](#units)
 	* INTERMEDIATE
-		* [CSS Flexbox](#flexbox)
+		    * [CSS Flexbox](#flexbox)
         * [CSS Grid](#grid)
         * [CSS Transitions and Animations](#transitionsandanimations)
         * [CSS Media Queries](#mediaqueries)
