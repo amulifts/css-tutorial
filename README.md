@@ -252,6 +252,16 @@ img {
 }
 ```
 
+And here's an example of a multi-column layout using floats:
+
+```html
+<div class="column">
+    <img src="image1.jpg" alt="Image 1">
+    <p>Some text.</p>
+</div>
+
+However, floating elements can sometimes cause unexpected behavior and layout issues, such as elements being moved out of their parent container or text overlapping floating elements. To fix these issues, a clearfix solution is often used.
+
 The CSS clear property specifies on which sides of an element floating elements are not allowed to float. The clear property can have one of the following values:
 
 - **left** - This specifies that no floating element should be to the left of the element.
@@ -263,6 +273,82 @@ The CSS clear property specifies on which sides of an element floating elements 
 - **none** - This specifies that floating elements can be on either side of the element.
 
 - **inherit** - This specifies that the clear value should be inherited from the element's parent.
+
+The clearfix solution uses a clear property to clear both the left and right float values, effectively making the parent container aware of the floated elements. This can be done by adding a clearfix class to the parent container, like this:
+
+```css
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+```
+
+And then adding the clearfix class to the parent container, like this:
+
+```html
+<div class="clearfix">
+    <div class="element">Element 1</div>
+    <div class="element">Element 2</div>
+</div>
+
+<a name="textandfontproperties"></a>
+
+### CSS Text and Font Properties
+
+A wide range of CSS properties can be used to style text and fonts. Here are some of the most commonly used properties:
+
+| Property | Description |
+| --- | --- |
+| font-size | Specifies the size of the text |
+| font-family | Specifies the font family for the text |
+| font-weight | Specifies the weight of the text |
+| color | Specifies the color of the text |
+| text-align | Specifies the horizontal alignment of the text |
+| text-decoration | Specifies the text decoration (e.g. underline, overline, line-through) |
+| text-shadow | Specifies the shadow effect of the text |
+| text-transform | Specifies the capitalization of the text |
+| letter-spacing | Specifies the spacing between characters in the text |
+| line-height | Specifies the line height of the text |
+| word-spacing | Specifies the spacing between words in the text |
+
+These properties can be used to style text in a variety of ways. Here are some examples:
+
+```css
+/* Sets the font size to 20px */
+p {
+    font-size: 20px;
+}
+```
+
+You can try out other text and font properties.
+
+<a name="colorsandbackgrounds"></a>
+
+### CSS Colors and Backgrounds
+
+A wide range of CSS properties can be used to style colors and backgrounds. Here are some of the most commonly used properties:
+
+| Property | Description |
+| --- | --- |
+| background-color | Specifies the background color of an element |
+| background-image | Specifies an image to use as the background of an element |
+| background-repeat | Specifies whether the background image should be repeated |
+| background-position | Specifies the starting position of a background image |
+| background-attachment | Specifies whether a background image should scroll with the rest of the page, or be fixed |
+| background-size | Specifies the size of the background image |
+| background | A shorthand property for setting all the background properties at once |
+
+These properties can be used to style colors and backgrounds in a variety of ways. Here are some examples:
+
+```css
+/* Sets the background color to red */
+div {
+    background-color: red;
+}
+```
+
+You can try out other color and background properties.
 
 
 
