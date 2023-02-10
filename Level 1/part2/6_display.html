@@ -1,0 +1,71 @@
+<!-- 
+    Some of the most common display values are:
+    - block - takes up full width of the page
+    - inline - takes up only the width of the content
+    - inline-block - act like inline but can use height and width
+    - none - acts as if the element was deleted
+
+    i will teach flex and grid later
+    - flex - flexbox, create a flex container, which allows for flexible and responsive layouts
+    - grid - create a grid container, which allows for two-dimensional grid-based layouts
+    and more...
+ -->
+
+<html>
+  <head>
+    <style>
+      .div1 {
+        display: block;
+        background-color: aqua;
+      }
+      .span1 {
+        display: inline;
+        background-color: blue;
+        /* can't user height and width with inline*/
+        /*                 
+        display: inline-block;
+        width: 200px;
+        height: 100px;
+        */
+      }
+      .img1 {
+        width: 80px;
+        height: 100px;
+      }
+      .span2 {
+        display: inline;
+        background-color: pink;
+      }
+      .div2 {
+        display: block;
+        background-color: rebeccapurple;
+        /* display none acts as if the element was deleted */
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+
+    <!-- Block level elements take up full width of the page -->
+    <!-- Examples: div, p, h1, h2, h3, h4, h5, h6, ul, ol, li, table, form, etc. -->
+
+    <!-- Inline elements take up only the width of the content -->
+    <!-- Examples: span, a, img, input, button, etc. -->
+
+    <!-- Inline-block elements act like inline but can use height and width -->
+    <!-- Examples: span, a, img, input, button, etc. -->
+
+    <!-- Display none acts as if the element was deleted -->
+    <!-- Examples: span, a, img, input, button, etc. -->
+
+    <div class="div1">This is a div</div>
+    <span class="span1">This is a span</span>
+    <img
+      src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aHRtbHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=1200&q=60"
+      alt="unsplash"
+      class="img1"
+    />
+    <span class="span2">This is a span</span>
+    <div class="div2">This is a div</div>
+  </body>
+</html>
