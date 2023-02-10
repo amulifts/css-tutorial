@@ -1,0 +1,172 @@
+<!-- 
+    There are different values for float:
+    - left - float the element to the left
+    - right - float the element to the right
+    - none - do not float the element
+    - initial - set the float property to its default value
+    - inherit - inherit the float property from its parent element
+ -->
+
+<html>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+      }
+
+      p {
+        font-size: larger;
+        text-align: center;
+        text-transform: uppercase;
+      }
+
+      .box1 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(211, 146, 146);
+        width: 100px;
+        height: 100px;
+        float: none;
+      }
+
+      .box2 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(211, 208, 146);
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+
+      .box3 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(146, 211, 211);
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+
+      .box4 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(211, 146, 198);
+        width: 100%;
+        height: 200px;
+      }
+
+      .clearbox1 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(211, 146, 146);
+        width: 100px;
+        height: 100px;
+        float: none;
+      }
+
+      .clearbox2 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(211, 208, 146);
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+
+      .clearbox3 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(146, 211, 211);
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+
+      .clearbox4 {
+        margin: 10px 10px 10px 10px;
+        background-color: rgb(211, 146, 198);
+        width: 100%;
+        height: 200px;
+        /* clear : none; */
+
+        /* once you use clear left, check by increasing height of .clearbox3 */
+        /* clear : left; */
+
+        /* once you use clear right, check by increasing height of .clearbox2 */
+        /* clear : right; */
+
+        clear: both;
+      }
+
+      .container {
+        margin: auto;
+        background-color: khaki;
+        border: 1px solid black;
+      }
+
+      #square1 {
+        background-color: rgb(146, 185, 211);
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+
+      #square2 {
+        background-color: rgb(211, 146, 161);
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+
+      .yesclearfix {
+        margin: 120px 0px 0px 0px;
+        background-color: khaki;
+        border: 1px solid black;
+      }
+
+      #clearfixsquare1 {
+        background-color: rgb(146, 185, 211);
+        width: 100px;
+        height: 100px;
+        float: left;
+      }
+
+      #clearfixsquare2 {
+        background-color: rgb(211, 146, 161);
+        width: 100px;
+        height: 100px;
+        float: right;
+      }
+
+      .clearfix::after {
+        content: "";
+        clear: both;
+        display: table;
+      }
+
+    </style>
+  </head>
+  <body>
+    <h1>Example of Float and Clear</h1>
+    <!-- Before clear -->
+    <p>Before clear</p>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+
+    <!-- After clear -->
+    <p>After clear</p>
+    <div class="clearbox1"></div>
+    <div class="clearbox2"></div>
+    <div class="clearbox3"></div>
+    <div class="clearbox4"></div>
+
+    <!-- Now we will use clearfix -->
+    <p>Now we will use clearfix (withouth clearfix and with respectively)</p>
+    <div class="container">
+      <div id="square1"></div>
+      <div id="square2"></div>
+    </div>
+
+    <div class="yesclearfix clearfix">
+      <div id="clearfixsquare1"></div>
+      <div id="clearfixsquare2"></div>
+    </div>
+  </body>
+</html>
