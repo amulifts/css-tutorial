@@ -1,0 +1,54 @@
+<!-- 
+    HTML Box Model consists of the following parts:
+    1. Content
+    2. Padding
+    3. Border
+    4. Margin
+
+    Bonus:
+    1. Custom Fonts
+        1. Google Fonts
+        2. Font Awesome
+        3. Font Squirrel
+        4. Font Space
+        5. Font Library
+        and many more...
+ -->
+
+<html>
+  <head>
+    <title>Box Model and External Fonts</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+      h1 {
+        text-align: center;
+        color: blue;
+        background-color: aqua;
+        text-decoration: underline;
+        font-weight: bolder;
+        font-size: 2em;
+        font-family: 'Noto Sans JP', sans-serif;
+      }
+      .one {
+        border: 3px solid black;
+        background-color: azure;
+        width: 50%;
+        /* top, right, bottom, left */
+        /* margin: 50px 25px 25px 50px; */
+        margin: auto;
+        /* text-align: center; */
+        padding: 50px 50px 50px 50px;
+        text-align: center;
+        font-size: 50px;
+        text-transform: uppercase;
+        font-family: 'Roboto', sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Box Model</h1>
+    <p class="one">one</p>
+  </body>
+</html>

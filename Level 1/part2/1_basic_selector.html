@@ -1,0 +1,44 @@
+<!-- 
+  There are different types of selectors in CSS:
+  1. Element Selector ( p, h1, div, etc. )
+  2. Class Selector ( .class-name )
+  3. ID Selector ( #id-name )
+  4. Universal Selector ( * )
+  5. Grouping Selector ( p, h1, div, etc. )
+  6. Descendant Selector ( p h1, div h1, etc. )
+  7. Child Selector ( p > h1, div > h1, etc. )
+  8. Adjacent Sibling Selector ( p + h1, div + h1, etc. )
+  9. General Sibling Selector ( p ~ h1, div ~ h1, etc. )
+  10. Attribute Selector ( [attribute] )
+  11. Pseudo-class Selector ( :hover, :active, :visited, etc. )
+  12. Pseudo-element Selector ( ::first-line, ::first-letter, etc. )
+  13. Negation Selector ( :not() )
+  and many more...
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>CSS</title>
+  </head>
+  <body>
+    <h1>This is a Heading</h1>
+    <!-- element type -->
+
+    <div class="text">
+      <!-- class type -->
+      <p>This is inside class div</p>
+    </div>
+
+    <div id="text">
+      <!-- id type -->
+      <p>This is inside id div</p>
+    </div>
+
+    <p class="simpletext">This is bad practice</p>
+  </body>
+</html>

@@ -1,0 +1,271 @@
+<!-- 
+  There are different types of elements in HTML that we can style using CSS:
+  1. Text
+  2. List
+  3. Table
+  4. Link
+  5. Image
+  6. Form
+  7. Video
+  8. Audio
+  9. Canvas
+  10. SVG
+  11. MathML
+  and many more...
+ -->
+
+<html>
+  <head>
+    <style>
+      h1 {
+        /* Set font size */
+        font-size: 2em;
+        /* Set font color */
+        color: blue;
+        /* Set font family */
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        /* Set font weight */
+        font-weight: bold;
+        /* Set font style */
+        font-style: italic;
+        /* Set text alignment */
+        text-align: center;
+        /* Set text decoration */
+        text-decoration: underline;
+        /* Set text transform */
+        text-transform: uppercase;
+        /* Set background color */
+        background-color: skyblue;
+        /* Set letter spacing */
+        letter-spacing: 2px;
+        /* Set word spacing */
+        word-spacing: 5px;
+      }
+
+      p {
+        /* Set font size */
+        font-size: 18px;
+        /* Set font color */
+        color: black;
+        /* Set font family */
+        font-family: Arial, Helvetica, sans-serif;
+        /* Set font style */
+        font-style: italic;
+        /* Set text alignment */
+        text-align: justify;
+        /* Set text transform */
+        text-transform: capitalize;
+        /* Set text indent */
+        text-indent: 50px;
+        /* Set line height */
+        line-height: 1.5;
+        /* Set letter spacing */
+        letter-spacing: 2px;
+        /* Set word spacing */
+        word-spacing: 5px;
+      }
+
+      ul {
+        /* Set list style type */
+        list-style-type: square;
+        /* Set list style position */
+        list-style-position: inside;
+        /* Set list style image */
+        list-style-image: url("https://www.w3schools.com/css/img_tree.png");
+        /* Set list style all in one */
+        /* list-style: square inside url("https://www.w3schools.com/css/img_tree.png"); */
+      }
+
+      table {
+        /* Set table width */
+        width: 50%;
+        /* Set table height */
+        height: 25%;
+        /* Set table border */
+        border: 1px solid black;
+        /* Set table border collapse */
+        border-collapse: collapse;
+        /* Set table border spacing */
+        border-spacing: 10px;
+        /* Set table caption side */
+        caption-side: bottom;
+      }
+      th {
+        /* Set table header border */
+        border: 1px solid black;
+        /* Set table header background color */
+        background-color: #4caf50;
+        /* Set table header text color */
+        color: white;
+        /* Align table header text */
+        text-align: center;
+      }
+      td {
+        /* Set table data border */
+        border: 1px solid black;
+        /* Set table data background color */
+        background-color: #f2f2f2;
+        /* Set table data text color */
+        color: black;
+        /* Align table data text */
+        text-align: center;
+      }
+
+      a {
+        /* Set link color */
+        color: blue;
+        /* Set link text decoration */
+        text-decoration: none;
+      }
+
+      img {
+        /* Set image width */
+        width: 100px;
+        /* Set image height */
+        height: 100px;
+        /* Set image border */
+        border: 1px solid black;
+        /* Set image border radius */
+        border-radius: 50%;
+        /* Set image opacity */
+        opacity: 0.5;
+        /* Set image filter */
+        filter: grayscale(100%);
+      }
+
+      form {
+        /* Set form width */
+        width: 50%;
+        /* Set form height */
+        height: 25%;
+        /* Set form border */
+        border: 1px solid black;
+        /* Set form border radius */
+        border-radius: 10px;
+        /* Set form background color */
+        background-color: #f2f2f2;
+      }
+      input {
+        /* Set input width */
+        width: 100%;
+        /* Set input height */
+        height: 25px;
+        /* Set input border */
+        border: 1px solid black;
+        /* Set input border radius */
+        border-radius: 5px;
+        /* Set input background color */
+        background-color: #f2f2f2;
+      }
+      button {
+        /* Set button width */
+        width: 100%;
+        /* Set button height */
+        height: 25px;
+        /* Set button border */
+        border: 1px solid black;
+        /* Set button border radius */
+        border-radius: 5px;
+        /* Set button background color */
+        background-color: #f2f2f2;
+      }
+
+      video {
+        /* Set video width */
+        width: 100%;
+        /* Set video height */
+        height: 70%;
+        /* Set video border */
+        border: 1px solid black;
+        /* Set video border radius */
+        border-radius: 10px;
+      }
+
+      audio {
+        /* Set audio width */
+        width: 50%;
+        /* Set audio height */
+        height: 30%;
+        /* Set audio border */
+        border: 1px solid black;
+        /* Set audio border radius */
+        border-radius: 10px;
+        /* Set audio background color */
+        background-color: #010101;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <h1>This is Aman</h1>
+
+    <!-- Paragraph -->
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt culpa
+      voluptates cupiditate vel, eum illo. Quod, perspiciatis non quas dolorem
+      delectus, rerum quia rem libero voluptates illo ipsam dolore aperiam.
+    </p>
+
+    <!-- List -->
+    <ul>
+      <li>One</li>
+      <li>Two</li>
+      <li>Three</li>
+    </ul>
+
+    <!-- Table -->
+    <table>
+      <caption>
+        Table Caption
+      </caption>
+      <thead>
+        <th>Header 1</th>
+        <th>Header 2</th>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Row 2 Column 1</td>
+          <td>Row 2 Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 3 Column 1</td>
+          <td>Row 3 Column 2</td>
+        </tr>
+        <tr>
+          <td>Row 4 Column 1</td>
+          <td>Row 4 Column 2</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Link -->
+    <a href="https://www.amankhadka.com">Visit Aman's Website</a>
+
+    <!-- Image -->
+    <img
+      src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRXVPtFGOUhiGGEkX7oE9oPPbbPXps3rtG4msz6mdUL8Ng1_011GO4AomLxJ64uQLLLfC4&usqp=CAU"
+      alt="Image"
+    />
+
+    <!-- Form -->
+    <form>
+      <label for="fname">First name:</label><br />
+      <input type="text" id="fname" name="fname" /><br />
+      <label for="lname">Last name:</label><br />
+      <input type="text" id="lname" name="lname" /><br /><br />
+      <input type="submit" value="Submit" />
+    </form>
+
+    <!-- Video -->
+    <video controls>
+      <source
+        src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4"
+      />
+    </video>
+
+    <!-- Audio -->
+    <audio controls>
+      <source src="https://www.w3schools.com/html/horse.ogg" type="audio/ogg" />
+    </audio>
+  </body>
+</html>
