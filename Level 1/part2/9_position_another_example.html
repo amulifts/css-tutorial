@@ -1,0 +1,90 @@
+
+
+<html>
+  <head>
+    <style>
+      .container {
+        margin: auto;
+        background-color: khaki;
+        border: 5px solid black;
+        width: 70%;
+        height: 3444px;
+      }
+
+      /* static position : default */
+      .static {
+        position: static;
+        background-color: lightblue;
+        width: 200px;
+        height: 200px;
+      }
+
+      /* relative position : relative to its normal position */
+      /* comment and uncomment the relative position and see the difference */
+      .relative {
+        position: relative;
+        background-color: lightgreen;
+        width: 200px;
+        height: 200px;
+        top: 50px;
+        left: 50px;
+      }
+
+      /* absolute position - first it will check it's parent element for position property,
+      if it has position property, it will be relative to that parent element, if not, it will be relative to the body */
+      /* to check add position: relative to the parent element i.e container */
+      .absolute {
+        position: absolute;
+        background-color: lightyellow;
+        width: 200px;
+        height: 200px;
+        top: 50px;
+        right: 50px;
+      }
+
+      /* fixed position : relative to the viewport i.e browser window */
+      .fixed {
+        position: fixed;
+        background-color: lightcoral;
+        width: 200px;
+        height: 200px;
+        bottom: 50px;
+        left: 50px;
+      }
+
+      /* sticky position : relative to the user's scroll position */
+      .sticky {
+        position: sticky;
+        background-color: lightgray;
+        width: 200px;
+        height: 200px;
+        top: 50px;
+      }
+
+      /* Bunch of text to scroll past the sticky element */
+      p {
+        font-size: 20px;
+        margin: 230px 0;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="static">This element has a position of "static".</div>
+      <div class="relative">This element has a position of "relative".</div>
+      <div class="absolute">This element has a position of "absolute".</div>
+      <div class="fixed">This element has a position of "fixed".</div>
+      <div class="sticky">This element has a position of "sticky".</div>
+    </div>
+  </body>
+</html>
+
+<!-- 
+    Five divs with different classes are created. Each div has a different position value.
+    .static has a position of "static" and will be positioned according to the normal flow of the page.
+    .relative has a position of "relative" and is offset 50px from its normal position using the top and left properties meaning it will be 50px below and 50px to the right of its normal position.
+    .absilute has a position of "absolute" and is positioned 50px from the top and right of it's nearest position ancestor (or the viewport if it has no position ancestor).
+    .fixed has a position of "fixed" and is positioned 50px from the bottom and left of the viewport( the browser window ).
+    .sticky has a position of "sticky" and is positioned 50px from the top of the viewport and will become fixed when the user scrolls past it.
+ -->
