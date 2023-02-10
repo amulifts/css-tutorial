@@ -1,0 +1,177 @@
+<!-- 
+    The position property has the following values:
+    - static (default)
+    - relative
+    - absolute
+    - fixed
+    - sticky
+    it is used to position an element in a specific place on the page
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body{
+        color : white;
+        text-transform: uppercase;
+        font-size: 15px;
+        text-align: center;
+      }
+
+      .container{
+        margin: 0 auto;
+        background-color: rgb(213, 171, 171);
+        width: 40%;
+      }
+
+      .box{
+        display: inline-block;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+
+      #box1{
+        position: static; /* default */
+        background-color: rgb(186, 220, 146);
+      }
+
+      #box2{
+        background-color: rgb(211, 146, 146);
+      }
+
+      #box3{
+        /* relative to the normal position and gap is seen in its original position */
+        position: relative;
+        
+        top: 50px;
+        left: 50px;
+        
+        background-color: rgb(225, 191, 139);
+      }
+
+      #box4{
+        background-color: rgb(146, 159, 191);
+      }
+
+      .container2{
+        margin: 60px auto;
+        background-color: rgb(213, 171, 171);
+        width: 40%;
+
+        position: relative;
+      }
+
+      #box5{
+        background-color: rgb(186, 220, 146);
+      }
+
+      #box6{
+        
+        background-color: rgb(211, 146, 146);
+
+      }
+
+      #box7{
+        /* When i use absolute, it first check if there is any parent element with position: relative or absolute , 
+        if there is, it will be relative to that parent element, if not, it will be relative to the body */ 
+        /* When i use absolute, the gap is not seen in its original position */
+        position: absolute;
+        background-color: rgb(225, 191, 139);
+
+        top: 50px;
+        left: 34px;
+      }
+
+      #box8{
+        background-color: rgb(146, 159, 191);
+      }
+
+      .container3{
+        margin: 60px auto;
+        background-color: rgb(213, 171, 171);
+        width: 40%;
+      }
+
+      #box9{
+        background-color: rgb(186, 220, 146);
+      }
+
+      #box10{
+        background-color: rgb(211, 146, 146);
+      }
+
+      #box11{
+        background-color: rgb(225, 191, 139);
+      }
+
+      #box12{
+        /* When i use fixed, it will be relative to the browser window */
+        position: fixed;
+        background-color: rgb(146, 159, 191);
+      }
+
+      .container4{
+        margin: 60px auto;
+        background-color: rgb(213, 171, 171);
+        width: 40%;
+        height: 2000px;
+      }
+
+      #box13{
+        /* When i use sticky, it is positioned based on the user's scroll position. */
+        position: sticky;
+        background-color: rgb(186, 220, 146);
+
+        top: 5px;
+      }
+
+      #box14{
+        background-color: rgb(211, 146, 146);
+      }
+
+      #box15{
+        background-color: rgb(225, 191, 139);
+      }
+
+      #box16{
+        background-color: rgb(146, 159, 191);
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box" id="box1">1 (static) </div>
+      <div class="box" id="box2">2</div>
+      <div class="box" id="box3">3 (relative)</div>
+      <div class="box" id="box4">4</div>
+    </div>
+
+    <div class="container2">
+      <div class="box" id="box5">5</div>
+      <div class="box" id="box6">6</div>
+      <div class="box" id="box7">7 (absolute)</div>
+      <div class="box" id="box8">8</div>
+    </div>
+
+    <div class="container3">
+      <div class="box" id="box9">9</div>
+      <div class="box" id="box10">10</div>
+      <div class="box" id="box11">11</div>
+      <div class="box" id="box12">12 (fixed) </div>
+    </div>
+
+    <div class="container4">
+      <div class="box" id="box13">13 (sticky)</div>
+      <div class="box" id="box14">14</div>
+      <div class="box" id="box15">15</div>
+      <div class="box" id="box16">16</div>
+    </div>
+  </body>
+</html>
