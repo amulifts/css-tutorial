@@ -1,0 +1,71 @@
+<!-- 
+    There are different values for visibility:
+    - visible - "visible" means the element is visible on the page and takes up space.
+    - hidden - "hidden" means the element is hidden but still takes up space on the page.
+    - collapse - "collapse" is used specially for table elements and works similarly to "hidden". However, when used with table elements, "collapse" will remove both the element and any space it would have occupied.
+    - initial - "initial" is the default value for the visibility property. It is the same as "visible".
+    - inherit - "inherit" means the element will inherit the visibility value from its parent element.
+ -->
+
+<html>
+  <head>
+    <style>
+      table{
+        border: 2px solid red;
+        border-collapse: collapse;
+      }
+
+      td{
+        border: 2px solid red;
+      }
+
+      .example1 {
+        visibility: visible;
+      }
+
+      .example2 {
+        visibility: hidden;
+      }
+
+      .example3 {
+        visibility: collapse;
+      }
+
+      .example4 {
+        visibility: initial; 
+      }
+
+      tr{
+        visibility: hidden;
+      }
+
+      /* Inherited from parent element i.e tr */
+      .example5 {
+        visibility: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <div style="visibility: hidden; display: block">
+      This element is hidden but takes up space.
+    </div>
+
+    <div style="visibility: hidden; display: none">
+      This element is hidden and takes up no space.
+    </div>
+
+    <table>
+      <tr>
+        <td class="example1">This element has a visibility of "visible".</td>
+        <td class="example2">This element has a visibility of "hidden".</td>
+      </tr>
+      <tr>
+        <td class="example3">This element has a visibility of "collapse".</td>
+        <td class="example4">This element has a visibility of "initial".</td>
+      </tr>
+      <tr>
+        <td class="example5">This element has a visibility of "inherit".</td>
+      </tr>
+    </table>
+  </body>
+</html>
