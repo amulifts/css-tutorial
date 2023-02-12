@@ -1,0 +1,38 @@
+h1{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 40px;
+    text-align: center;
+}
+
+.container{
+    margin: auto;
+    width: 100%;
+    text-align: center;
+}
+
+.box{
+    display: inline-block;
+    width: 200px;
+    height: 400px;
+    margin: 10px;
+}
+
+#box1{
+    background-color: #d8e2dc;
+}
+
+#box2{
+    background-color: #ffe5d9;
+}
+
+#box3{
+    background-color: #ffcad4;
+}
+
+#box4{
+    background-color: #f4acb7;
+}
+
+#box5{
+    background-color: #9d8189;
+}
