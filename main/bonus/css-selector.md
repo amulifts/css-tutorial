@@ -12,7 +12,7 @@ h2 {
 }
 ```
 
-- **Example** : - **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html)
 
 **Group** -- selects all `h1`, `h2` and `h3` elements on the page
 
