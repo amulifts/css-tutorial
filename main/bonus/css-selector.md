@@ -12,7 +12,8 @@ h2 {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html){:target="_blank"}
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html)
+<a href="https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html" target="_blank">View the code</a>
 
 **Group** -- selects all `h1`, `h2` and `h3` elements on the page
 
