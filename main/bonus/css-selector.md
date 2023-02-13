@@ -277,7 +277,7 @@ Useful `n` values:
 }
 ```
 
-- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/12_pseudo_elements.html)
+- **Example For Each** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/12_pseudo_elements.html)
 
 ## Attribute selectors
 
@@ -309,7 +309,7 @@ Useful `n` values:
 }
 ```
 
-- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/15_attribute_whitespace_separated.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/15_attribute_whitespace_seperated.html)
 
 **Hyphen separated** -- selects `.foo` elements with `bar` attribute values contain specified partial value of `fum` immediately followed by hyphen (`-`) character
 
