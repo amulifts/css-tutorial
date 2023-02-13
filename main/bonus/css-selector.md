@@ -12,7 +12,7 @@ h2 {
 }
 ```
 
-<a href="https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html" target="_blank">View the code</a>
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html)
 
 **Group** -- selects all `h1`, `h2` and `h3` elements on the page
 
@@ -21,6 +21,8 @@ h1, h2, h3 {
     foo: bar;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/2_group.html)
 
 ## Class and ID selectors
 
@@ -35,6 +37,8 @@ p.foo {
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/3_class.html)
+
 **ID** -- selects the element with 'foo' id attribute value
 
 ```CSS
@@ -42,6 +46,8 @@ p.foo {
     bar: fum;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/4_id.html)
 
 ## Contextual selectors
 
@@ -53,6 +59,8 @@ p.foo {
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/5_descendant.html)
+
 **Adjacent sibling** -- selects the sibling element `p` that is immediately next to `h2` element
 
 ```CSS
@@ -60,6 +68,8 @@ h2 + p {
     foo: bar;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/6_adjacent_sibling.html)
 
 **Child** -- selects all `p` elements that are immediate children of `#foo` element
 
@@ -69,6 +79,8 @@ h2 + p {
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/7_child.html)
+
 **General sibling** -- selects all elements `p` that are siblings to the `h2` element
 
 ```CSS
@@ -76,6 +88,8 @@ h2 ~ p {
     foo: bar;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/8_general_sibling.html)
 
 ## Pseudo-class selectors
 
@@ -128,6 +142,8 @@ a:visited {
     bar: fum;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/9_pseudo_class.html)
 
 ### Pseudo-class selectors that apply to siblings
 
@@ -211,6 +227,8 @@ h2:nth-last-of-type(n) {
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/10_pseudo_class.html)
+
 Useful `n` values:
 
 - `odd` or `2n+1` -- every odd child or element
@@ -220,6 +238,8 @@ Useful `n` values:
 - `3n+1` -- every third child or element starting with `1` (1, 4, 7, ...)
 - `n+6` -- all but first five children or elements (6, 7, 8, ...)
 - `-n+5` -- only first five children or elements (1, 2, ..., 5)
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/11_using_n.html)
 
 ### Pseudo-element selectors
 
@@ -256,6 +276,8 @@ Useful `n` values:
     content: 'baz';
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/12_pseudo_elements.html)
 
 ## Attribute selectors
 
