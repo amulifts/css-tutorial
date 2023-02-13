@@ -1,6 +1,6 @@
 # CSS Selectors Cheatsheet
 
-Hi! If you see an error or something is missing (like `:focus-within` for few years :P) please let me know :heart:
+Hi! This is a cheatsheet for CSS selectors. It is a part of the [CSS Tutorial](https://github.com/amulifts/css-tutorial) for everyone who wants to learn CSS.
 
 ## Element selectors
 
