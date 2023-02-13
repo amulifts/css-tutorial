@@ -289,6 +289,8 @@ Useful `n` values:
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/13_attribute_present.html)
+
 **Exact** -- selects `.foo` elements where the `bar` attribute has the exact value of `fum`
 
 ```CSS
@@ -296,6 +298,8 @@ Useful `n` values:
     baz: qux;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/14_attribute_exact.html)
 
 **Whitespace separated** -- selects `.foo` elements with `bar` attribute values contain specified partial value of `fum` (whitespace separated)
 
@@ -305,6 +309,8 @@ Useful `n` values:
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/15_attribute_whitespace_separated.html)
+
 **Hyphen separated** -- selects `.foo` elements with `bar` attribute values contain specified partial value of `fum` immediately followed by hyphen (`-`) character
 
 ```CSS
@@ -312,6 +318,8 @@ Useful `n` values:
     baz: qux;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/16_attribute_hyphen_separated.html)
 
 **Begins with** -- selects `.foo` elements where the `bar` attribute begins with `fum`
 
@@ -321,6 +329,8 @@ Useful `n` values:
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/17_attribute_begin_with.html)
+
 **Ends with** -- selects `.foo` elements where the `bar` attribute ends with `fum`
 
 ```CSS
@@ -329,6 +339,8 @@ Useful `n` values:
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/18_attribute_end_with.html)
+
 **Contains** -- selects `.foo` elements where the `bar` attribute contains string `fum` followed and preceded by any number of other characters
 
 ```CSS
@@ -336,6 +348,8 @@ Useful `n` values:
     baz: qux;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/19_attribute_contains.html)
 
 ## Misc selectors
 
@@ -347,6 +361,8 @@ Useful `n` values:
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/20_not_selector.html)
+
 **Root** -- selects the highest level parent element in the DOM
 
 ```CSS
@@ -355,6 +371,8 @@ Useful `n` values:
 }
 ```
 
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/21_root.html)
+
 **Empty** -- selects `.foo` elements that have no children or whitespace inside
 
 ```CSS
@@ -362,6 +380,8 @@ Useful `n` values:
     bar: fum;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/22_empty.html)
 
 **In-range** and **Out-of-range** -- selects `.foo` elements that have values in or out of range
 
@@ -373,3 +393,5 @@ Useful `n` values:
     bar: fum;
 }
 ```
+
+[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/23_range.html)

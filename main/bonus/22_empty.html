@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <style>
+      .foo:empty {
+        background-color: rgb(234, 173, 173);
+        height: 100px;
+        width: 100px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      p{
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="foo"></div>
+    <div class="foo">
+      <p>This div is not empty but the above one is.</p>
+    </div>
+  </body>
+</html>
