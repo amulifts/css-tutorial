@@ -227,7 +227,7 @@ h2:nth-last-of-type(n) {
 }
 ```
 
-- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/10_pseudo_class.html)
+- **Example For Each** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/10_pseudo_class.html)
 
 Useful `n` values:
 
@@ -239,7 +239,7 @@ Useful `n` values:
 - `n+6` -- all but first five children or elements (6, 7, 8, ...)
 - `-n+5` -- only first five children or elements (1, 2, ..., 5)
 
-- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/11_using_n.html)
+- **Example using `n` values** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/11_using_n.html)
 
 ### Pseudo-element selectors
 
