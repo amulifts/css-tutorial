@@ -143,7 +143,7 @@ a:visited {
 }
 ```
 
-- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/9_pseudo_class.html)
+- **Example For Each** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/9_pseudo_class.html)
 
 ### Pseudo-class selectors that apply to siblings
 
