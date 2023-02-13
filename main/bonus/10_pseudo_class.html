@@ -1,0 +1,103 @@
+<!-- 
+    Useful n values:
+    1. odd or 2n+1 -- every odd child or element
+    2. even or 2n -- every even child or element
+    3. n -- every nth child or element
+    4. 3n -- every third child or element (3, 6, 9, ...)
+    5. 3n+1 -- every third child or element starting with 1 (1, 4, 7, ...)
+    6. n+6 -- all but first five children or elements (6, 7, 8, ...)
+    7. -n+5 -- only first five children or elements (1, 2, ..., 5) 
+-->
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: #e6e6e6;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 200px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .foo:first-child {
+        background-color: #f44336;
+      }
+
+      /* last-child don't work here */
+      .foo:last-of-type {
+        background-color: #3f51b5;
+      }
+
+      .foo:only-child {
+        background-color: #4caf50;
+      }
+
+      h2:first-of-type {
+        background-color: #ff9800;
+      }
+
+      h2:last-child {
+        background-color: #2196f3;
+      }
+
+      h2:only-of-type {
+        background-color: #009688;
+      }
+
+      .foo:nth-child(3) {
+        background-color: #e91e63;
+      }
+
+      .foo:nth-last-child(2) {
+        background-color: #8bc34a;
+      }
+
+      h2:nth-of-type(3) {
+        background-color: #9c27b0;
+      }
+
+      h2:nth-last-of-type(3) {
+        background-color: #ffeb3b;
+      }
+
+      .parent {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box foo">1</div>
+      <div class="box foo">2</div>
+      <div class="box foo">3</div>
+      <div class="box foo">4</div>
+      <div class="box foo">5</div>
+      <h2 class="box">Header 1</h2>
+      <h2 class="box">Header 2</h2>
+      <h2 class="box">Header 3</h2>
+      <h2 class="box">Header 4</h2>
+    </div>
+
+    <div class="parent">
+      <div class="box foo">Only Child</div>
+    </div>
+
+    <div class="parent">
+      <h2 class="box">Only H2 Element</h2>
+    </div>
+
+    
+  </body>
+</html>

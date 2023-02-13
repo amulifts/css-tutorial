@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <style>
+      .foo[bar~="fum"] {
+        background-color: #4caf50;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In this example, the div element with the class "foo" and the "bar" attribute containing the value "this is a value containing the word fum" will have a green background color because it contains the partial value "fum" separated by whitespaces.-->
+    <div class="foo" bar="this is a value containing the word fum">
+      This is a div element with the "foo" class and a "bar" attribute
+    </div>
+  </body>
+</html>

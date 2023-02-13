@@ -1,0 +1,40 @@
+<html>
+  <head>
+    <style>
+      a:link {
+        color: blue;
+        text-decoration: underline;
+      }
+      a:visited {
+        color: purple;
+      }
+      .foo:focus {
+        background-color: lightyellow;
+        border: 2px solid green;
+      }
+      .foo:focus-within {
+        background-color: lightgray;
+      }
+      .foo:hover {
+        cursor: pointer;
+      }
+      .foo:active {
+        background-color: lightgreen;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="#">This is an unvisited link</a><br /><br />
+    <a href="#" style="color: purple">This is a visited link</a><br /><br />
+    <input class="foo" type="text" placeholder="Focus here" /><br /><br />
+    <div class="foo">
+      <input type="text" placeholder="Focus within this element" />
+    </div>
+    <br /><br />
+    <div class="foo" style="background-color: lightgray">
+      Hover over this element
+    </div>
+    <br /><br />
+    <button class="foo">Click me</button>
+  </body>
+</html>

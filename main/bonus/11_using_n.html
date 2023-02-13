@@ -1,0 +1,52 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 10px;
+      }
+      .box {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: #e6e6e6;
+        border: 1px solid #ccc;
+        text-align: center;
+        line-height: 200px;
+        font-size: 20px;
+        color: #333;
+      }
+
+      .foo:nth-child(odd) {
+        background-color: #f44336;
+      }
+
+      .foo:nth-child(even) {
+        background-color: #3f51b5;
+      }
+
+      .foo:nth-child(3n) {
+        background-color: #e91e63;
+      }
+
+      .foo:nth-child(-n + 5) {
+        background-color: #ffeb3b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box foo">1</div>
+      <div class="box foo">2</div>
+      <div class="box foo">3</div>
+      <div class="box foo">4</div>
+      <div class="box foo">5</div>
+      <div class="box foo">6</div>
+      <div class="box foo">7</div>
+      <div class="box foo">8</div>
+      <div class="box foo">9</div>
+      <div class="box foo">10</div>
+    </div>
+  </body>
+</html>

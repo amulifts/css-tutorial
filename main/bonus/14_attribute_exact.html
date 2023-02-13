@@ -1,0 +1,14 @@
+<html>
+  <head>
+    <style>
+      .foo[bar="fum"] {
+        color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- In this example, the first div element with class foo and attribute bar equal to "fum" will be displayed with a green color. The second div element with class foo and attribute bar equal to "notfum" will not have the green color applied as the exact value of bar attribute is not equal to "fum". -->
+    <div class="foo" bar="fum">Hello World</div>
+    <div class="foo" bar="notfum">Hello World</div>
+  </body>
+</html>

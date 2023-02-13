@@ -1,0 +1,33 @@
+<html>
+  <head>
+    <style>
+      .foo p::first-letter {
+        font-size: 2em;
+        color: red;
+      }
+
+      .foo p::first-line {
+        font-weight: bold;
+        color: blue;
+      }
+
+      .foo::before {
+        content: "Before content";
+        display: block;
+        margin-bottom: 20px;
+      }
+
+      .foo::after {
+        content: "After content";
+        display: block;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="foo">
+      <p>This is a sample paragraph.</p>
+      <p>This is another sample paragraph.</p>
+    </div>
+  </body>
+</html>

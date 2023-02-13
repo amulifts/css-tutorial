@@ -1,0 +1,26 @@
+<html>
+  <head>
+    <style>
+      #foo > p {
+        color: purple;
+        font-size: 14px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="foo">
+      <p>
+        This is a paragraph that is an immediate child of the element with id
+        "foo"
+      </p>
+      <div>
+        <p>
+          This is another paragraph within the element with id "foo" but not an
+          immediate child
+        </p>
+      </div>
+    </div>
+    <p>This is a normal paragraph outside of the element with id "foo"</p>
+  </body>
+</html>
