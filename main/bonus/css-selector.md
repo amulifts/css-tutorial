@@ -12,7 +12,7 @@ h2 {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html)
+- **Example** : - **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/1_element.html)
 
 **Group** -- selects all `h1`, `h2` and `h3` elements on the page
 
@@ -22,7 +22,7 @@ h1, h2, h3 {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/2_group.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/2_group.html)
 
 ## Class and ID selectors
 
@@ -37,7 +37,7 @@ p.foo {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/3_class.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/3_class.html)
 
 **ID** -- selects the element with 'foo' id attribute value
 
@@ -47,7 +47,7 @@ p.foo {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/4_id.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/4_id.html)
 
 ## Contextual selectors
 
@@ -59,7 +59,7 @@ p.foo {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/5_descendant.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/5_descendant.html)
 
 **Adjacent sibling** -- selects the sibling element `p` that is immediately next to `h2` element
 
@@ -69,7 +69,7 @@ h2 + p {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/6_adjacent_sibling.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/6_adjacent_sibling.html)
 
 **Child** -- selects all `p` elements that are immediate children of `#foo` element
 
@@ -79,7 +79,7 @@ h2 + p {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/7_child.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/7_child.html)
 
 **General sibling** -- selects all elements `p` that are siblings to the `h2` element
 
@@ -89,7 +89,7 @@ h2 ~ p {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/8_general_sibling.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/8_general_sibling.html)
 
 ## Pseudo-class selectors
 
@@ -143,7 +143,7 @@ a:visited {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/9_pseudo_class.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/9_pseudo_class.html)
 
 ### Pseudo-class selectors that apply to siblings
 
@@ -227,7 +227,7 @@ h2:nth-last-of-type(n) {
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/10_pseudo_class.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/10_pseudo_class.html)
 
 Useful `n` values:
 
@@ -239,7 +239,7 @@ Useful `n` values:
 - `n+6` -- all but first five children or elements (6, 7, 8, ...)
 - `-n+5` -- only first five children or elements (1, 2, ..., 5)
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/11_using_n.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/11_using_n.html)
 
 ### Pseudo-element selectors
 
@@ -277,7 +277,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/12_pseudo_elements.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/12_pseudo_elements.html)
 
 ## Attribute selectors
 
@@ -289,7 +289,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/13_attribute_present.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/13_attribute_present.html)
 
 **Exact** -- selects `.foo` elements where the `bar` attribute has the exact value of `fum`
 
@@ -299,7 +299,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/14_attribute_exact.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/14_attribute_exact.html)
 
 **Whitespace separated** -- selects `.foo` elements with `bar` attribute values contain specified partial value of `fum` (whitespace separated)
 
@@ -309,7 +309,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/15_attribute_whitespace_separated.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/15_attribute_whitespace_separated.html)
 
 **Hyphen separated** -- selects `.foo` elements with `bar` attribute values contain specified partial value of `fum` immediately followed by hyphen (`-`) character
 
@@ -319,7 +319,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/16_attribute_hyphen_separated.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/16_attribute_hyphen_separated.html)
 
 **Begins with** -- selects `.foo` elements where the `bar` attribute begins with `fum`
 
@@ -329,7 +329,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/17_attribute_begin_with.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/17_attribute_begin_with.html)
 
 **Ends with** -- selects `.foo` elements where the `bar` attribute ends with `fum`
 
@@ -339,7 +339,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/18_attribute_end_with.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/18_attribute_end_with.html)
 
 **Contains** -- selects `.foo` elements where the `bar` attribute contains string `fum` followed and preceded by any number of other characters
 
@@ -349,7 +349,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/19_attribute_contains.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/19_attribute_contains.html)
 
 ## Misc selectors
 
@@ -361,7 +361,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/20_not_selector.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/20_not_selector.html)
 
 **Root** -- selects the highest level parent element in the DOM
 
@@ -371,7 +371,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/21_root.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/21_root.html)
 
 **Empty** -- selects `.foo` elements that have no children or whitespace inside
 
@@ -381,7 +381,7 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/22_empty.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/22_empty.html)
 
 **In-range** and **Out-of-range** -- selects `.foo` elements that have values in or out of range
 
@@ -394,4 +394,4 @@ Useful `n` values:
 }
 ```
 
-[View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/23_range.html)
+- **Example** : [View the code](https://github.com/amulifts/css-tutorial/blob/main/main/bonus/23_range.html)
