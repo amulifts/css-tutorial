@@ -1,0 +1,49 @@
+<!-- Grid Areas: Use the grid-template-areas property to define grid areas and place items within those areas. -->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: auto 1fr auto;
+        grid-template-areas:
+          "header header"
+          "sidebar main"
+          "footer footer";
+        grid-gap: 10px;
+      }
+
+      .header {
+        grid-area: header;
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+      }
+
+      .main {
+        grid-area: main;
+      }
+
+      .footer {
+        grid-area: footer;
+      }
+
+      .grid-item {
+        background-color: #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item header">Header</div>
+      <div class="grid-item sidebar">Sidebar</div>
+      <div class="grid-item main">Main Content</div>
+      <div class="grid-item footer">Footer</div>
+    </div>
+  </body>
+</html>

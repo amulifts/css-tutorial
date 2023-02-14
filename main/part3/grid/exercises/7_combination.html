@@ -1,0 +1,82 @@
+<!-- Grid and Flexbox: Combine grid and flexbox to create a layout with both rows and columns. -->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-gap: 20px;
+      }
+
+      .grid-item {
+        display: flex;
+        flex-direction: column;
+        background-color: #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+
+      h2 {
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 0;
+      }
+
+      @media screen and (max-width: 768px) {
+        .grid-container {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item item1">
+        <h2>Item 1</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="grid-item item2">
+        <h2>Item 2</h2>
+        <p>
+          Nulla facilisi. Vestibulum ante ipsum primis in faucibus orci luctus
+          et ultrices posuere cubilia Curae; Nunc lobortis iaculis diam, eget
+          malesuada enim finibus ut.
+        </p>
+      </div>
+      <div class="grid-item item3">
+        <h2>Item 3</h2>
+        <p>
+          Aliquam at justo id ipsum pharetra convallis vel vel ex. In bibendum
+          hendrerit ipsum, vel scelerisque libero vehicula eget.
+        </p>
+      </div>
+      <div class="grid-item item4">
+        <h2>Item 4</h2>
+        <p>
+          Etiam euismod tellus augue, et laoreet eros volutpat ac. Curabitur eu
+          purus at odio lobortis tincidunt a id enim.
+        </p>
+      </div>
+      <div class="grid-item item5">
+        <h2>Item 5</h2>
+        <p>
+          Donec in turpis enim. Morbi luctus ac magna eu accumsan. Suspendisse
+          euismod arcu quis ante varius gravida.
+        </p>
+      </div>
+      <div class="grid-item item6">
+        <h2>Item 6</h2>
+        <p>
+          Cras quis efficitur risus. Vestibulum ante ipsum primis in faucibus
+          orci luctus et ultrices posuere cubilia Curae; Sed consequat ac quam
+          vel efficitur.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

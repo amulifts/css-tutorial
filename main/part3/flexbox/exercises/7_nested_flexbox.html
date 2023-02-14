@@ -1,0 +1,42 @@
+<!-- Nested Flexbox: Create a nested flexbox layout where one container is nested inside another. -->
+
+<html>
+  <head>
+    <style>
+      .outer-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #eee;
+        height: 300px;
+      }
+
+      .inner-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #ddd;
+        height: 200px;
+        width: 70%;
+      }
+
+      .box {
+        background-color: #ccc;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="outer-container">
+      <div class="inner-container">
+        <div class="box">Box 1</div>
+        <div class="box">Box 2</div>
+        <div class="box">Box 3</div>
+      </div>
+      <div class="box">Box 4</div>
+    </div>
+  </body>
+</html>

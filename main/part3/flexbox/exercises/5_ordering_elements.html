@@ -1,0 +1,41 @@
+<!-- Ordering Elements: Use the order property to change the order of elements in your design. -->
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        height: 50vh;
+      }
+
+      .menu {
+        order: 1;
+        background-color: #ccc;
+        width: 100%;
+        text-align: center;
+      }
+
+      .content {
+        order: 2;
+        background-color: #eee;
+        width: 100%;
+        text-align: center;
+      }
+
+      .sidebar {
+        order: 3;
+        background-color: #ddd;
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="menu">Menu</div>
+      <div class="content">Content</div>
+      <div class="sidebar">Sidebar</div>
+    </div>
+  </body>
+</html>

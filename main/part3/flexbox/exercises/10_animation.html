@@ -1,0 +1,39 @@
+<!-- Flexbox Animations: Use flexbox and CSS animations to create animated effects in your design. -->
+
+<html>
+  <head>
+    <style>
+      .animation-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+      }
+
+      .box {
+        background-color: #ccc;
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+        text-align: center;
+        animation: fade 1s ease-in-out alternate infinite;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 1;
+        }
+        to {
+          opacity: 0.5;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="animation-container">
+      <div class="box">Box 1</div>
+      <div class="box">Box 2</div>
+      <div class="box">Box 3</div>
+    </div>
+  </body>
+</html>

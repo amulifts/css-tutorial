@@ -1,0 +1,55 @@
+<!-- Equal Height Columns: Use flexbox to make columns that have equal height, even if their content varies. -->
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+      }
+
+      .column {
+        flex: 1;
+        background-color: #eee;
+        padding: 20px;
+        text-align: center;
+        margin: 10px;
+      }
+
+      @media screen and (min-width: 768px) {
+        .container {
+          flex-wrap: wrap;
+        }
+        .column {
+          flex: 1 0 30%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="column">
+        <h2>Column 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+          varius elit vel euismod placerat.
+        </p>
+      </div>
+      <div class="column">
+        <h2>Column 2</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent
+          convallis ipsum ut mauris efficitur, vel fringilla turpis bibendum.
+        </p>
+        <p>
+          Praesent suscipit velit ac ligula molestie, id bibendum quam mattis.
+        </p>
+      </div>
+      <div class="column">
+        <h2>Column 3</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <p>Vestibulum dictum velit eget velit tincidunt fermentum.</p>
+        <p>Nullam nec elit eu lorem lobortis lobortis at ac nulla.</p>
+      </div>
+    </div>
+  </body>
+</html>

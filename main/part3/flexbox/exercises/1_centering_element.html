@@ -1,0 +1,45 @@
+<!-- Centering Elements: Try centering elements both horizontally and vertically using flexbox. -->
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        border: 1px solid black;
+        height: 100vh;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+      }
+
+      .item1 {
+        background-color: rgb(180, 222, 175);
+      }
+
+      .item2 {
+        background-color: rgb(175, 202, 222);
+      }
+
+      .item3 {
+        background-color: rgb(213, 175, 222);
+      }
+
+      .item4 {
+        background-color: rgb(222, 204, 175);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="item item1"></div>
+      <div class="item item2"></div>
+      <div class="item item3"></div>
+      <div class="item item4"></div>
+    </div>
+  </body>
+</html>

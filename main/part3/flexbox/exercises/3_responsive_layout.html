@@ -1,0 +1,48 @@
+<!-- Responsive Layout: Create a responsive layout using flexbox that adjusts to different screen sizes. -->
+
+<html>
+  <head>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .sidebar {
+        width: 30%;
+        background-color: #ccc;
+        padding: 20px;
+        text-align: center;
+      }
+
+      .main-content {
+        flex: 1;
+        background-color: #eee;
+        padding: 20px;
+        text-align: center;
+      }
+
+      @media screen and (max-width: 768px) {
+        .sidebar {
+          width: 100%;
+          order: 2;
+        }
+        .main-content {
+          order: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="sidebar">
+        <h2>Sidebar</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+      <div class="main-content">
+        <h2>Main Content</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+    </div>
+  </body>
+</html>

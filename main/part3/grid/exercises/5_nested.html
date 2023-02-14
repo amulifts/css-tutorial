@@ -1,0 +1,39 @@
+<!-- Nested Grids: Create a nested grid layout where one grid container is nested inside another. -->
+
+<html>
+  <head>
+    <style>
+      .grid-container-outer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 200px 100px;
+        grid-gap: 10px;
+      }
+
+      .grid-container-inner {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 10px;
+      }
+
+      .grid-item {
+        background-color: #ccc;
+        padding: 20px;
+        box-sizing: border-box;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container-outer">
+      <div class="grid-container-inner">
+        <div class="grid-item item1">Item 1</div>
+        <div class="grid-item item2">Item 2</div>
+        <div class="grid-item item3">Item 3</div>
+        <div class="grid-item item4">Item 4</div>
+      </div>
+      <div class="grid-item item5">Item 5</div>
+    </div>
+  </body>
+</html>
