@@ -1,0 +1,43 @@
+<!-- Create a HTML page and apply styles using both class and id selectors. Try to apply styles using both class and id selectors on the same element to see how CSS cascading and specificity work. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+
+      #header {
+        background-color: lightgray;
+        text-align: center;
+        padding: 20px;
+      }
+
+      #title {
+        color: blue;
+        font-size: 36px;
+      }
+
+      .bold {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header" class="highlight">
+      <h1 id="title" class="bold">Welcome to my website</h1>
+      <p>Here you'll find some interesting content</p>
+    </div>
+    <p>Here's some content for you to enjoy...</p>
+  </body>
+</html>
+<!-- 
+In this example, we have applied both class and id selectors to the same element. The div element has both the id="header" and class="highlight" attributes.
+
+When multiple styles are applied to the same element, the styles are combined based on a set of rules known as the cascading and specificity of CSS.
+
+In this case, the id selector #header has a higher specificity than the class selector .highlight, so the background color of the div element will be lightgray, as specified in the #header selector. However, the text of the h1 element inside the div will be bold, as specified in the .bold selector.
+
+You can try experimenting with different combinations of class and id selectors to see how cascading and specificity work in practice.
+-->

@@ -1,0 +1,26 @@
+<!-- Create a HTML page and experiment with attribute selectors. Try selecting elements based on their attributes and values, such as links with a specific "href" attribute. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      a[href="https://www.openai.com/"] {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Here's a list of some interesting links:</p>
+    <ul>
+      <li><a href="https://www.openai.com/">OpenAI</a></li>
+      <li><a href="https://www.google.com/">Google</a></li>
+      <li><a href="https://www.facebook.com/">Facebook</a></li>
+    </ul>
+  </body>
+</html>
+<!-- 
+In this example, we're using an attribute selector to select all a elements that have a href attribute with a value of "https://www.openai.com/". The selected elements will be displayed with a blue color and bold font weight, as specified in the CSS.
+
+You can try experimenting with different attribute selectors, such as selecting elements based on the presence of an attribute, or based on the start or end of the value of an attribute. 
+-->

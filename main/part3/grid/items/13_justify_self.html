@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <style>
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-gap: 10px;
+      }
+
+      .item {
+        background-color: lightblue;
+        border: 1px solid black;
+      }
+
+      .item:nth-child(2) {
+        /* The default value. The grid item inherits the value of its parent container's justify-items property. */
+        /* justify-self: auto; */
+
+        /* Stretches the grid item to fill the entire height of the grid cell. */
+        /* justify-self: stretch; */
+
+        /* center: Centers the grid item within the grid cell along the row axis. */
+        justify-self: center;
+
+        /* end: Aligns the grid item to be flush with the end edge of the grid cell. */
+        /* justify-self: end; */
+
+        /* start: Aligns the grid item to be flush with the start edge of the grid cell. */
+        /* justify-self: start; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+    </div>
+  </body>
+</html>

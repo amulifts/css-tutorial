@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      .grid-container {
+        /* When you set an element's display property to grid, it becomes a grid container. 
+        This means that all of its direct children become grid items and will be laid out in a grid according to the properties you set on the container.
+        */
+
+        display: grid;
+        /* display: inline-grid; */
+        background-color: rgb(159, 214, 214);
+      }
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+
+      #one {
+        background-color: rgb(222, 164, 164);
+      }
+
+      #two {
+        background-color: rgb(154, 213, 154);
+      }
+
+      #three {
+        background-color: rgb(151, 151, 222);
+      }
+
+      #four {
+        background-color: rgb(222, 222, 151);
+      }
+
+      #five {
+        background-color: rgb(222, 151, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="one"></div>
+      <div class="grid-item" id="two"></div>
+      <div class="grid-item" id="three"></div>
+      <div class="grid-item" id="four"></div>
+      <div class="grid-item" id="five"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!-- 
+  The grid-template-rows property is used to define the size and number of rows in a grid container.
+  It takes a value that specifies the size of each row and the number of rows in the grid.
+
+  The value can be specified using any of the following:
+  1. A fixed value, such as 100px or 2em, for a specific row.
+  2. A percentage, such as 50%, which represents a percentage of the available space in the grid container.
+  3. A fractional unit, such as 1fr or 2.5fr, which represents a fraction of the available space in the grid container.
+  4. The minmax function, which specifies a range of acceptable sizes for a row, such as minmax(100px, 1fr).
+  5. The repeat function, which repeats a pattern of row sizes, such as repeat(3, 1fr 2fr).
+-->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+
+        /* Uncomment all those properties one by one to see the effect. */
+
+        display: grid;
+        gap: 10px;
+        background-color: rgb(159, 214, 214);
+
+        /* none by default */
+
+        /* grid-template-rows: none; */
+        
+        grid-template-columns: repeat(5, 1fr);
+
+        /* this will create 3 rows, each with a height of 1fr */
+        grid-template-rows: repeat(3, 1fr);
+      }
+
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        /* margin: 10px; */
+      }
+
+      #one {
+        background-color: rgb(222, 164, 164);
+      }
+
+      #two {
+        background-color: rgb(154, 213, 154);
+      }
+
+      #three {
+        background-color: rgb(151, 151, 222);
+      }
+
+      #four {
+        background-color: rgb(222, 222, 151);
+      }
+
+      #five {
+        background-color: rgb(222, 151, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="one"></div>
+      <div class="grid-item" id="two"></div>
+      <div class="grid-item" id="three"></div>
+      <div class="grid-item" id="four"></div>
+      <div class="grid-item" id="five"></div>
+    </div>
+  </body>
+</html>

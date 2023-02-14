@@ -1,0 +1,74 @@
+<!-- 
+  The grid-template-columns property defines the columns of the grid with a space-separated list of values.
+  It takes a value that specifies the size of each column and the number of columns in the grid.
+
+  The value can be specified using any of the following:
+  1. A fixed value, such as 100px or 2em, for a specific column.
+  2. A percentage, such as 50%, which represents a percentage of the available space in the grid container.
+  3. A fractional unit, such as 1fr or 2.5fr, which represents a fraction of the available space in the grid container.
+  4. The minmax function, which specifies a range of acceptable sizes for a column, such as minmax(100px, 1fr).
+  5. The repeat function, which specifies a number of columns with the same size, such as repeat(3, 1fr).
+-->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+
+        /* Uncomment all those properties one by one to see the effect. */
+
+        display: grid;
+        grid-gap: 10px;
+        background-color: rgb(159, 214, 214);
+        /* first column, second column, third column */
+
+        /* none by default */
+
+        /* grid-template-columns: none; */
+
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-columns: 1fr; */
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
+      }
+
+      .grid-item {
+        width: 100px;
+        height: 100px;
+        /* margin: 10px; */
+      }
+
+      #one {
+        background-color: rgb(222, 164, 164);
+      }
+
+      #two {
+        background-color: rgb(154, 213, 154);
+      }
+
+      #three {
+        background-color: rgb(151, 151, 222);
+      }
+
+      #four {
+        background-color: rgb(222, 222, 151);
+      }
+
+      #five {
+        background-color: rgb(222, 151, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="one"></div>
+      <div class="grid-item" id="two"></div>
+      <div class="grid-item" id="three"></div>
+      <div class="grid-item" id="four"></div>
+      <div class="grid-item" id="five"></div>
+    </div>
+  </body>
+</html>

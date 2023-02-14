@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <style>
+      .flex-container {
+        /* 
+                --> As soon as you add display: flex to an element
+                1. It becomes a flex container. 
+                    - and all its direct children become flex items
+                    - and can be styled with flex properties. 
+                
+                2. The default layout direction changes.
+                    - from horizontal to vertical
+                    - By default, flex containers arrange their flex items in a row from left to right.
+                    - but you can change the direction to column by adding flex-direction: column;
+                    
+                3. The flex items become flexible.
+                    - By default, flex items are sized according to their content.
+                    - but when they become Flex items, they become flexible and can be resized and repositioned using flexbox properties.
+                
+                4. The alignment and spacing of Flex items can be controlled:
+                    - Flexbox provides several properties that can be used to control the alignment and spacing of Flex items,
+                    such as justify-content, align-items, and gap.
+                */
+        display: flex;
+        /* display: inline-flex; */
+        background-color: rgb(159, 214, 214);
+      }
+      .flex-item {
+        width: 100px;
+        height: 100px;
+        margin: 10px;
+      }
+
+      #one {
+        background-color: rgb(222, 164, 164);
+      }
+
+      #two {
+        background-color: rgb(154, 213, 154);
+      }
+
+      #three {
+        background-color: rgb(151, 151, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item" id="one"></div>
+      <div class="flex-item" id="two"></div>
+      <div class="flex-item" id="three"></div>
+    </div>
+  </body>
+</html>

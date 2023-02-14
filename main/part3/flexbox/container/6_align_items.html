@@ -1,0 +1,59 @@
+<!-- 
+    The align-items property accepts the following values:
+    1. stretch: default value and stretches the flex items to fill the container along the cross-axis.
+    2. flex-start: aligns the flex items to the start of the container's cross-axis.
+    3. flex-end: aligns the flex items to the end of the container's cross-axis.
+    4. center: aligns the flex items to the center of the container's cross-axis.
+    5. baseline: aligns the flex items to the baseline of the container's cross-axis.
+
+    Note:
+    In Flexbox, the cross axis refers to the secondary axis along which the flex items are laid out. The direction of the cross axis is perpendicular to the main axis.
+    For example, if the main axis is horizontal, the cross axis is vertical.
+    If the main axis is vertical, the cross axis is horizontal.
+ -->
+
+<!-- 
+  change the align-items property to stretch, flex-start, flex-end and baseline to see the difference.  
+-->
+<html>
+  <head>
+    <style>
+      .flex-container {
+        background-color: rgb(231, 197, 197);
+        height: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+    </div>
+  </body>
+</html>

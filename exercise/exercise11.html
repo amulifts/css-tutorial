@@ -1,0 +1,44 @@
+<!-- Experiment with CSS pseudo-classes such as :hover, :active, and :focus to add dynamic styles to your HTML elements. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .button {
+        background-color: lightgray;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+
+      .button:hover {
+        background-color: blue;
+        color: white;
+      }
+
+      .button:active {
+        background-color: darkblue;
+      }
+
+      .button:focus {
+        outline: none;
+        box-shadow: 0 0 0 2px blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="button">Click Me</button>
+  </body>
+</html>
+
+<!-- 
+In this example, we're using a button element with a class selector of .button to create a simple button.
+
+The .button selector sets the basic style for the button, such as the background color and padding. The .button:hover selector sets the style for when the mouse is hovered over the button, changing the background color to blue and the text color to white.
+
+The .button:active selector sets the style for when the button is being pressed, changing the background color to a darker blue.
+
+The .button:focus selector sets the style for when the button has focus, such as when it is being tabbed to. In this example, we're removing the default outline and adding a blue box shadow to highlight the button.
+
+You can try experimenting with different styles and pseudo-classes to create dynamic and interactive elements on your HTML pages.
+-->

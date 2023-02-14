@@ -1,0 +1,78 @@
+<!-- 
+    The grid-row is shorthand for grid-row-start and grid-row-end.
+    The grid-column is shorthand for grid-column-start and grid-column-end.
+-->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+        border: 4px solid yellowgreen;
+        min-height: 850px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr [headl] 1fr 1fr 1fr [headr] 1fr; */
+        grid-template-rows: auto;
+        column-gap: 8px;
+        row-gap: 8px;
+      }
+
+      .grid-items {
+        border: 4px solid sandybrown;
+      }
+
+      .grid-items:nth-child(3) {
+        background-color: rgb(0, 200, 255);
+        grid-column: 3 / 6;
+        grid-row: 1 / 3;
+
+        /* or we can use the span keyword */
+        /* grid-column: 3 / span 3;
+        grid-row: 1 / span 2; */
+
+        /* or we can use the named grid lines */
+        /* grid-column: headl / headr; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-items">1</div>
+      <div class="grid-items">2</div>
+      <div class="grid-items">3</div>
+      <div class="grid-items">4</div>
+      <div class="grid-items">5</div>
+      <div class="grid-items">6</div>
+      <div class="grid-items">7</div>
+      <div class="grid-items">8</div>
+      <div class="grid-items">9</div>
+      <div class="grid-items">10</div>
+      <div class="grid-items">11</div>
+      <div class="grid-items">12</div>
+      <div class="grid-items">13</div>
+      <div class="grid-items">14</div>
+      <div class="grid-items">15</div>
+      <div class="grid-items">16</div>
+      <div class="grid-items">17</div>
+      <div class="grid-items">18</div>
+      <div class="grid-items">19</div>
+      <div class="grid-items">20</div>
+      <div class="grid-items">21</div>
+      <div class="grid-items">22</div>
+      <div class="grid-items">23</div>
+      <div class="grid-items">24</div>
+      <div class="grid-items">25</div>
+      <div class="grid-items">26</div>
+      <div class="grid-items">27</div>
+      <div class="grid-items">28</div>
+      <div class="grid-items">29</div>
+      <div class="grid-items">30</div>
+      <div class="grid-items">31</div>
+      <div class="grid-items">32</div>
+      <div class="grid-items">33</div>
+      <div class="grid-items">34</div>
+      <div class="grid-items">35</div>
+      <div class="grid-items">36</div>
+    </div>
+  </body>
+</html>

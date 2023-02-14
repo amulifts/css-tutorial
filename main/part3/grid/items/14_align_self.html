@@ -1,0 +1,51 @@
+<!-- 
+  It aligns a grid item along the column axis.
+  The align-self has the following values:
+  1. start : Aligns the grid item to be flush with the start edge of the grid cell.
+  2. end : Aligns the grid item to be flush with the end edge of the grid cell.
+  3. center : Centers the grid item within the grid cell along the column axis.
+  4. stretch : Stretches the grid item to fill the entire height of the grid cell.
+  5. auto : The default value. The grid item inherits the value of its parent container's align-items property.
+-->
+
+<html>
+  <head>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px;
+        grid-gap: 10px;
+      }
+
+      .item1 {
+        background-color: rgb(136, 208, 208);
+      }
+
+      .item2 {
+        background-color: rgb(123, 123, 213);
+        /* align-self: start; */
+        /* align-self: end; */
+        align-self: center;
+        /* align-self: stretch; */
+        /* align-self: auto; */
+      }
+
+      .item3 {
+        background-color: rgb(126, 190, 126);
+      }
+
+      .item4 {
+        background-color: rgb(200, 142, 142);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item1">1</div>
+      <div class="item2">2</div>
+      <div class="item3">3</div>
+      <div class="item4">4</div>
+    </div>
+  </body>
+</html>

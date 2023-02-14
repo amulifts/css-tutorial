@@ -1,0 +1,147 @@
+<!-- 
+    The order property is used to specify the order in which the flex items appear within the flex container.
+    It takes a unitless number as its value, with the default value being 0.
+
+    The order value can be set to any integer, including negative values.
+
+    Note:
+    lower values appear earlier in the source order, and higher values appear later in the source order.
+-->
+
+<html>
+  <head>
+    <style>
+      .flex-container {
+        margin: 50px auto;
+        background-color: rgb(231, 197, 197);
+        width: 700px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+
+        /* if the order is 0, the item will appear in the source order */
+        order: 0;
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+
+      .flex-item4 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+      }
+
+      .flex-item5 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(169, 229, 207);
+
+        /* if the order is 1, the item will appear after the item with order 0 */
+        order: 1;
+      }
+
+      .flex-item6 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item7 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+
+      .flex-item8 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+      }
+
+      .flex-item9 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(169, 229, 207);
+
+        /* if the order is -1, the item will appear before the item with order 0 */
+        order: 1;
+      }
+
+      .flex-item10 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+        order: 4;
+      }
+
+      .flex-item11 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+        order: 2;
+      }
+
+      .flex-item12 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+        order: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Flex 0 : changed only box 1</h2>
+    <div class="flex-container">
+      <div class="flex-item1" style="color: white">1</div>
+      <div class="flex-item2">2</div>
+      <div class="flex-item3">3</div>
+      <div class="flex-item4">4</div>
+    </div>
+
+    <h2>Flex 1 : changed only box 1</h2>
+    <div class="flex-container">
+      <div class="flex-item5" style="color: white">1</div>
+      <div class="flex-item6">2</div>
+      <div class="flex-item7">3</div>
+      <div class="flex-item8">4</div>
+    </div>
+
+    <h2>Flex 1,4,2,3 : changed all 4 boxes</h2>
+    <div class="flex-container">
+      <div class="flex-item9" style="color: white">1</div>
+      <div class="flex-item10">2</div>
+      <div class="flex-item11">3</div>
+      <div class="flex-item12">4</div>
+    </div>
+  </body>
+</html>

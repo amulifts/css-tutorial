@@ -1,0 +1,70 @@
+<!-- 
+    Generally, there are 3 properties that are used to control the auto-placement algorithm:
+    1. grid-auto-columns : sets the width of the columns
+        This have the following values:
+        - auto : the width of the column is set to the width of the content
+        - <length> : the width of the column is set to the specified length
+        - <percentage> : the width of the column is set to the specified percentage of the width of the grid container
+
+    2. grid-auto-rows : sets the height of the rows
+        This have the following values:
+        - auto : the height of the row is set to the height of the content
+        - <length> : the height of the row is set to the specified length
+        - <percentage> : the height of the row is set to the specified percentage of the height of the grid container
+    3. grid-auto-flow : sets the direction of the auto-placement algorithm
+        This have the following values:
+        - row : the auto-placement algorithm starts placing items from the top left corner of the grid, and then moves to the right
+        - column : the auto-placement algorithm starts placing items from the top left corner of the grid, and then moves down
+        - row dense : the auto-placement algorithm starts placing items from the top left corner of the grid, and then moves to the right. If there are any gaps in the grid, the algorithm fills them in
+        - column dense : the auto-placement algorithm starts placing items from the top left corner of the grid, and then moves down. If there are any gaps in the grid, the algorithm fills them in
+-->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+        margin: 10px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .autorow {
+        grid-auto-rows: 100px;
+      }
+
+      .autocolumn {
+        grid-auto-columns: 100px;
+      }
+
+      .autoflow {
+        grid-auto-flow: column;
+      }
+
+      .item {
+        background-color: #ccc;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container autorow">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+
+    <div class="grid-container autocolumn">
+      <div class="item">1</div>
+      <div class="item a">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+
+    <div class="grid-container autoflow">
+      <div class="item">1</div>
+      <div class="item">2</div>
+      <div class="item">3</div>
+      <div class="item">4</div>
+    </div>
+  </body>
+</html>

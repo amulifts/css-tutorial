@@ -1,0 +1,96 @@
+<!-- 
+    The values for grid-row-start, grid-row-end and grid-column-start, grid-column-end are as follows:
+    1. <number>: Specifies the start/end position of the grid item in terms of grid lines.
+    2. <name>: Specifies the name of a named grid line.
+    3. span <number>: Specifies the number of rows that the grid item should span.
+    4. span <name>: Specifies the number of rows that the grid item should span, using a named grid line.
+
+    The default value for both properties is auto, which means that the size of the row or column is set to the size of the content.
+-->
+
+<html>
+  <head>
+    <style>
+      
+      .grid-container{
+        border: 4px solid yellowgreen;
+        min-height: 850px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr [headl] 1fr 1fr 1fr [headr] 1fr; */
+        grid-template-rows: auto;
+        column-gap: 8px;
+        row-gap: 8px;
+      }
+
+      .grid-items{
+        border: 4px solid sandybrown;
+      }
+
+      .grid-items:nth-child(3){
+        background-color: rgb(0, 200, 255);
+        
+        /* You can use the <number> keyword to specify the start and end positions of a grid item. */
+        /* grid-column-start: 3; */
+        /* grid-column-end: 6; */
+
+        /* grid-row-start: 1;
+        grid-row-end: 3; */
+
+
+        /* You can use the span keyword to specify the number of rows or columns that a grid item should span. */
+        grid-column-start: span 3;
+        grid-row-start: span 2;
+        
+      }
+
+      /* You can also use named grid lines to specify the start and end positions of a grid item. */
+      /* .grid-items:nth-child(3){
+        background-color: rgb(0, 200, 255);
+        grid-column-start: headl;
+        grid-column-end: headr;
+      } */
+
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-items">1</div>
+      <div class="grid-items">2</div>
+      <div class="grid-items">3</div>
+      <div class="grid-items">4</div>
+      <div class="grid-items">5</div>
+      <div class="grid-items">6</div>
+      <div class="grid-items">7</div>
+      <div class="grid-items">8</div>
+      <div class="grid-items">9</div>
+      <div class="grid-items">10</div>
+      <div class="grid-items">11</div>
+      <div class="grid-items">12</div>
+      <div class="grid-items">13</div>
+      <div class="grid-items">14</div>
+      <div class="grid-items">15</div>
+      <div class="grid-items">16</div>
+      <div class="grid-items">17</div>
+      <div class="grid-items">18</div>
+      <div class="grid-items">19</div>
+      <div class="grid-items">20</div>
+      <div class="grid-items">21</div>
+      <div class="grid-items">22</div>
+      <div class="grid-items">23</div>
+      <div class="grid-items">24</div>
+      <div class="grid-items">25</div>
+      <div class="grid-items">26</div>
+      <div class="grid-items">27</div>
+      <div class="grid-items">28</div>
+      <div class="grid-items">29</div>
+      <div class="grid-items">30</div>
+      <div class="grid-items">31</div>
+      <div class="grid-items">32</div>
+      <div class="grid-items">33</div>
+      <div class="grid-items">34</div>
+      <div class="grid-items">35</div>
+      <div class="grid-items">36</div>
+    </div>
+  </body>
+</html>

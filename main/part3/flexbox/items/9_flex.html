@@ -1,0 +1,204 @@
+<!-- 
+    Flex property have the following values:
+    1. flex-grow: default value is 0, it is used to determine how much an item can grow if there is available space.
+    2. flex-shrink: it is used to determine how much an item can shrink if there is not enough space. if the value is 0, the item will not shrink. if the value is 1, the item will shrink to fit the container and we can use any other item with a flex-shrink value greater than 0.
+    3. flex-basis: Default value is auto, which means the item will be sized based on its content. We can use any length value, like 100px, or a percentage value, like 50%. it is used to specify the initial size of the item before the remaining space is distributed.
+
+    Note:
+    We generally use the flex shorthand property to set all three flex properties at once. The flex property has the following syntax:
+    - flex: flex-grow flex-shrink flex-basis;
+    These three properties work together to control how flex items are sized and distributed within a flex container.
+ -->
+
+<html>
+  <head>
+    <style>
+      .flex-container {
+        margin: 50px auto;
+        background-color: rgb(231, 197, 197);
+        width: 700px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+
+        /* This item will grow to fill the remaining space */
+        flex-grow: 1;
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+
+      .flex-item4 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+      }
+
+      .flex-item5 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(169, 229, 207);
+
+        /* if the value is 0, the item will not shrink. if the value is 1, the item will shrink to fit the container. */
+        /* flex-shrink: 0; */
+        flex-shrink: 1;
+      }
+
+      .flex-item6 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(147, 174, 217);
+      }
+
+      .flex-item7 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(181, 215, 143);
+      }
+
+      .flex-item8 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 207, 146);
+      }
+
+      .flex-item9 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(194, 146, 221);
+      }
+
+      .flex-item10 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(146, 216, 221);
+      }
+
+      .flex-item11 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 166, 146);
+      }
+
+      .flex-item12 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 146, 147);
+      }
+
+      .flex-item13 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 146, 171);
+
+        /* if auto, the item will be sized based on its content. ( default )*/
+        /* flex-basis: auto; */
+
+        /* if 300px, the item will be sized to 300px. */
+        flex-basis: 300px;
+      }
+
+      .flex-item14 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 146, 147);
+      }
+
+      .flex-item15 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(146, 221, 150);
+      }
+
+      .flex-item16 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 146, 147);
+
+        /* flex: 1; is the same as flex-grow: 1; flex-shrink: 1; flex-basis: auto; */
+        flex: 1;
+      }
+
+      .flex-item17 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(146, 215, 221);
+
+        /* flex: 1 1 300px; is the same as flex-grow: 1; flex-shrink: 1; flex-basis: 300px; */
+        flex: 1 1 300px;
+      }
+
+      .flex-item18 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(221, 146, 210);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item1" style="color: white">Flex Grow</div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+      <div class="flex-item4"></div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item5" style="color: white">Flex Shrink</div>
+      <div class="flex-item6"></div>
+      <div class="flex-item7"></div>
+      <div class="flex-item8"></div>
+      <div class="flex-item9"></div>
+      <div class="flex-item10"></div>
+      <div class="flex-item11"></div>
+      <div class="flex-item12"></div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item13" style="color: white">Flex Basis</div>
+      <div class="flex-item14"></div>
+      <div class="flex-item15"></div>
+    </div>
+
+    <div class="flex-container">
+      <div class="flex-item16" style="color: white">Flex</div>
+      <div class="flex-item17"></div>
+      <div class="flex-item18"></div>
+    </div>
+  </body>
+</html>

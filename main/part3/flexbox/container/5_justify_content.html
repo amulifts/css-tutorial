@@ -1,0 +1,56 @@
+<!-- 
+    Justify content have 5 values:
+    1. flex-start: This aligns items to the start of the container's main axis.
+    2. flex-end: This aligns items to the end of the container's main axis.
+    3. center:  This centers the items along the container's main axis.
+    4. space-between: This evenly distributes the items along the main axis, with the first item at the start of the container and the last item at the end of the container.
+    5. space-around: This evenly distributes the items along the main axis with equal space on both sides of each item.
+    
+    Note:
+    In Flexbox, the main axis refers to the primary axis along which the flex items are laid out. The direction of the main axis is determined by the flex-direction property.
+    For example, if flex-direction is set to row, the main axis is horizontal and runs from left to right. If flex-direction is set to column, the main axis is vertical and runs from top to bottom.
+-->
+
+<!-- 
+    Change the justify-content property to flex-start, flex-end, center and space-around to see the difference.
+-->
+
+ <html>
+    <head>
+      <style>
+        .flex-container {
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+        }
+  
+        .flex-item1 {
+          margin: 10px;
+          width: 100px;
+          height: 100px;
+          background-color: rgb(180, 222, 175);
+        }
+  
+        .flex-item2 {
+          margin: 10px;
+          width: 100px;
+          height: 100px;
+          background-color: rgb(175, 202, 222);
+        }
+  
+        .flex-item3 {
+          margin: 10px;
+          width: 100px;
+          height: 100px;
+          background-color: rgb(213, 175, 222);
+        }
+      </style>
+    </head>
+    <body>
+      <div class="flex-container">
+        <div class="flex-item1"></div>
+        <div class="flex-item2"></div>
+        <div class="flex-item3"></div>
+      </div>
+    </body>
+  </html>  

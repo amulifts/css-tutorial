@@ -1,0 +1,39 @@
+<!-- Try combining selectors to create more specific styles. For example, use a combination of element type and class selectors, or a combination of class and id selectors. -->
+
+<html>
+  <head>
+    <style>
+      /* Style for all paragraphs within a class of "special" */
+      .special p {
+        font-size: 1.5em;
+        color: blue;
+      }
+
+      /* Style for a specific header with an id of "header1" */
+      #header1 {
+        font-size: 2em;
+        font-weight: bold;
+      }
+
+      /* Style for a class of "button" within a specific element with an id of "form1" */
+      #form1 .button {
+        background-color: green;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="special">
+      <h2 id="header1">Header 1</h2>
+      <p>This is a sample paragraph within the "special" class.</p>
+      <p>This is another sample paragraph within the "special" class.</p>
+    </div>
+
+    <form id="form1">
+      <input type="text" />
+      <button class="button">Submit</button>
+    </form>
+  </body>
+</html>

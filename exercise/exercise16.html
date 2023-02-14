@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Webpage</title>
+    <style>
+      /* Element type selector */
+      section {
+        background-color: lightgray;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      /* Class selector */
+      .highlight {
+        background-color: rgb(224, 224, 163);
+        color: black;
+        font-weight: bold;
+      }
+
+      /* ID selector */
+      #header {
+        background-color: rgb(156, 210, 156);
+        color: white;
+        text-align: center;
+        padding: 20px;
+      }
+
+      /* Class and ID selector combination */
+      .link {
+        color: blue;
+        text-decoration: none;
+      }
+      #footer .link {
+        color: white;
+      }
+
+      /* Pseudo-class selectors */
+      .link:hover {
+        color: red;
+      }
+      .link:active {
+        color: yellow;
+      }
+      .link:focus {
+        outline: 1px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header with ID selector applied -->
+    <header id="header">
+      <h1>My Webpage</h1>
+    </header>
+
+    <!-- Section with element type selector applied -->
+    <section>
+      <h2>Section 1</h2>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer varius
+        justo at sapien egestas, auctor viverra diam varius. Sed a nisi rutrum,
+        interdum eros a, finibus dolor. Curabitur porta justo a magna commodo
+        malesuada. Sed id ex ante. Nam blandit gravida neque, eu bibendum erat
+        congue vitae. Sed condimentum justo elit, id suscipit magna placerat in.
+        Sed hendrerit, leo non rhoncus aliquam, justo mauris viverra nibh, eget
+        placerat sapien sapien in tellus. Sed facilisis ante magna, id tempor ex
+        malesuada vel.
+      </p>
+    </section>
+
+    <!-- Section with class selector applied -->
+    <section class="highlight">
+      <h2>Section 2</h2>
+      <p>
+        Mauris commodo dolor in lorem aliquam, id aliquet metus fringilla. Nam
+        vestibulum facilisis mauris et dictum. Sed dictum nisi ac dui bibendum,
+        a aliquet enim aliquet. Sed eget semper sapien. Duis efficitur, mauris
+        id congue commodo, velit diam elementum mi, eu egestas velit libero vel
+        quam. Nunc a mauris dictum, dictum sapien non, viverra lacus. Sed
+        fringilla ipsum at justo varius, id interdum elit sollicitudin. Sed
+        placerat magna velit, vel congue lacus gravida vel.
+      </p>
+    </section>
+
+    <!-- Section with class and ID selector combination applied -->
+    <section class="highlight">
+      <h2>Section 3</h2>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro quis,
+        voluptate illo error quam corporis ipsam autem libero facilis
+        consequatur est id magnam iusto nostrum sed dolores. Eaque, magni
+        obcaecati?
+      </p>
+    </section>
+
+    <!-- Section with pseudo-class selectors applied -->
+    <section>
+      <h2>Section 4</h2>
+      <p>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Exercitationem
+        eos vitae tempora illo nemo eligendi numquam rerum aliquam dicta
+        inventore provident alias ex, rem enim laboriosam nobis? Itaque,
+        pariatur in!
+      </p>
+    </section>
+
+    <!-- Footer with class and ID selector combination applied -->
+    <footer id="footer">
+      <p>Created by <a href="#" class="link">Aman Khadka</a></p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!-- 
+    Aligning items horizontally:
+    1. inline-block : we should write inline-block for each item
+        This method will make the items behave like text, so you can center them using text-align: center;. However, you may see gaps between the items due to whitespace in the HTML. This method is also not as flexible as some of the other methods, and it may not work well for larger or more complex layouts.
+    2. float : we should write float: left/right; for each item
+        This method is based on the old CSS box model, and is primarily used for wrapping text around an image or other object. When you use float: left; to align items, you need to clear the float on the parent container to prevent it from collapsing. This method can be tricky to use, and it can be difficult to achieve a consistent layout.
+    3. flexbox : we should write display: flex; for the parent container
+        This method is designed for building flexible, responsive layouts. It allows you to easily control the alignment, distribution, and order of items, and it can be used to create complex layouts with minimal code. However, it may not be supported by older browsers.
+    4. grid : we should write display: grid; and grid-template-columns: repeat(3, 1fr); for the parent container
+        This method is similar to flexbox, but it is even more powerful and flexible. It allows you to create a two-dimensional grid of rows and columns, and it gives you fine-grained control over the size and position of each item. It can be used to create complex layouts with ease, but it may not be supported by older browsers.
+    
+    But the most used method are flexbox and grid.
+-->
+
+<html>
+  <head>
+    <style>
+      /* align horizontal using flexbox */
+      .flex-container {
+        display: flex;
+      }
+
+      /* align vertical using grid */
+      /* .flex-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      } */
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+    </div>
+  </body>
+</html>

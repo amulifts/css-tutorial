@@ -119,6 +119,8 @@ There are so many other selectors available. Here are some of the most commonly 
 - **Pseudo-class selector** - `:hover`, `:active`, `:focus`, `:first-child`, `:last-child`, `:nth-child()`
 - **Pseudo-element selector** - `::first-letter`, `::first-line`, `::before`, `::after`
 
+**Selector Cheat Sheet** [Link to cheat sheet](https://gist.github.com/amulifts/0bc6618c2b4048e42e7dd990531943cf)
+
 We will learn more about these later in this tutorial.
 
 <a name="boxmodel"></a>

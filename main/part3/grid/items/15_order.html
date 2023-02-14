@@ -1,0 +1,46 @@
+<!-- 
+    The order property specifies the order in which the grid items appear in the grid container.
+    
+    The order value can be set to any integer, including negative values.
+-->
+
+<html>
+  <head>
+    <style>
+      .grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 100px;
+        grid-gap: 10px;
+      }
+
+      .item1 {
+        order: 0;
+        background-color: rgb(136, 208, 208);
+      }
+
+      .item2 {
+        order: -1;
+        background-color: rgb(123, 123, 213);
+      }
+
+      .item3 {
+        order: 999;
+        background-color: rgb(126, 190, 126);
+      }
+
+      .item4 {
+        order: 1;
+        background-color: rgb(200, 142, 142);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div class="item item1">1</div>
+      <div class="item item2">2</div>
+      <div class="item item3">3</div>
+      <div class="item item4">4</div>
+    </div>
+  </body>
+</html>

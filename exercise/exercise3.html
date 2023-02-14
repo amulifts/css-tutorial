@@ -1,0 +1,35 @@
+<!-- Experiment with CSS specificity nature of CSS. Try applying styles using both an id selector and a class selector to the same element, and observe how the styles are combined. -->
+
+<html>
+  <head>
+    <style>
+      /* #my-div {
+        color: blue;
+      }
+
+      .my-class {
+        color: red;
+      } */
+
+      /* And Swap */
+
+      .my-class {
+        color: red;
+      }
+
+      #my-div {
+        color: blue;
+      }
+
+      /* The result would be the same, because the id selector still has a higher specificity than the class selector. */
+
+    </style>
+  </head>
+  <div id="my-div" class="my-class">Hello, world!</div>
+</html>
+
+<!-- 
+In this CSS code, the first style sets the color of the header with an id of "header1" to blue. The second style sets the color of all elements with a class of "text" to green. The third style sets the color of the specific element with both an id of "header1" and a class of "text" to red.
+
+You can observe how the styles are combined and how the specificity of the selectors affects the final styles applied to the elements.
+-->

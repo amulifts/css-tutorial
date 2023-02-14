@@ -1,0 +1,132 @@
+<!-- 
+    The align-content property have the following values:
+        flex-start: This aligns the flex lines at the start of the container.
+        flex-end: This aligns the flex lines at the end of the container.
+        center: This centers the flex lines vertically in the container.
+        space-between: This evenly distributes the flex lines along the main axis of the container, with the first line at the start of the container and the last line at the end.
+        space-around: This evenly distributes the flex lines along the main axis of the container, with equal space on each side of each line.
+        stretch: This stretches the flex lines to fill the remaining space in the container.
+    
+    The align-content property is used to align the flex lines when there is extra space in the container along the cross-axis.
+    It only applies when the container has multiple lines of flex items and there is extra space on the cross-axis.
+
+    Note:
+    If there is only one line of flex items, align-items is used instead to align the items on the cross-axis.
+ -->
+
+<!-- 
+  change the align-items property to stretch, flex-start, flex-end and baseline to see the difference.  
+-->
+
+<html>
+  <head>
+    <style>
+      .flex-container {
+        margin: 50px auto;
+        background-color: rgb(231, 197, 197);
+        width: 700px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .no-wrap {
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+
+      .wrap {
+        flex-wrap: wrap;
+        align-content: center;
+      }
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+
+      .flex-item4 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+      }
+
+      .flex-item5 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(95, 216, 172);
+      }
+
+      .flex-item6 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(204, 60, 156);
+      }
+
+      .flex-item7 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 219, 175);
+      }
+
+      .flex-item8 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 222, 186);
+      }
+
+      .flex-item9 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 177, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container no-wrap">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+      <div class="flex-item4"></div>
+      <div class="flex-item5"></div>
+      <div class="flex-item6"></div>
+      <div class="flex-item7"></div>
+      <div class="flex-item8"></div>
+      <div class="flex-item9"></div>
+    </div>
+
+    <div class="flex-container wrap">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+      <div class="flex-item4"></div>
+      <div class="flex-item5"></div>
+      <div class="flex-item6"></div>
+      <div class="flex-item7"></div>
+      <div class="flex-item8"></div>
+      <div class="flex-item9"></div>
+    </div>
+  </body>
+</html>

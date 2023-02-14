@@ -1,0 +1,56 @@
+<!-- 
+    It aligns a grid item along the row axis.
+    The justify-self has the following values:
+    1. start : Aligns the grid item to be flush with the start edge of the grid cell.
+    2. end : Aligns the grid item to be flush with the end edge of the grid cell.
+    3. center : Centers the grid item within the grid cell along the row axis.
+    4. stretch : Stretches the grid item to fill the entire height of the grid cell.
+    5. auto : The default value. The grid item inherits the value of its parent container's justify-items property.
+-->
+
+<html>
+  <head>
+    <style>
+      .grid-container {
+        margin: 10px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .item {
+        width: 100px;
+        height: 100px;
+        background-color: #dc9696;
+      }
+
+      .item1 {
+        justify-self: start;
+      }
+
+      .item2 {
+        justify-self: end;
+      }
+
+      .item3 {
+        justify-self: center;
+      }
+
+      .item4 {
+        justify-self: stretch;
+      }
+
+      .item5 {
+        justify-self: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="item item1">start</div>
+      <div class="item item2">end</div>
+      <div class="item item3">center</div>
+      <div class="item item4">stretch</div>
+      <div class="item item5">auto</div>
+    </div>
+  </body>
+</html>

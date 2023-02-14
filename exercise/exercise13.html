@@ -1,0 +1,39 @@
+<!-- Create a set of class selectors to represent different styles for links, such as different colors for visited links, hover links, active links, etc. -->
+
+<html>
+  <head>
+    <style>
+      /* Class Selector for Unvisited Links */
+      .link-style {
+        color: blue;
+        text-decoration: none;
+      }
+
+      /* Class Selector for Visited Links */
+      .link-style:visited {
+        color: purple;
+      }
+
+      /* Class Selector for Hover Links */
+      .link-style:hover {
+        color: red;
+      }
+
+      /* Class Selector for Active Links */
+      .link-style:active {
+        color: green;
+      }
+    </style>
+  </head>
+    <body>
+        <a href="#" class="link-style">Unvisited Link</a>
+        <br />
+        <a href="#" class="link-style">Visited Link</a>
+        <br />
+        <a href="#" class="link-style">Hover Link</a>
+        <br />
+        <a href="#" class="link-style">Active Link</a>
+    </body>
+</html>
+
+<!-- With this code, you'll have four links on the page, each with the class link-style applied to it. The styles for the links will change based on the state of the link (unvisited, visited, hover, active), as defined in the CSS code. -->

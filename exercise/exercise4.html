@@ -1,0 +1,32 @@
+<!-- Experiment with CSS cascading nature of CSS. Try applying styles using both an id selector and a class selector to the same element, and observe how the styles are combined. -->
+
+<!-- Experiment with CSS specificity nature of CSS. Try applying styles using both an id selector and a class selector to the same element, and observe how the styles are combined. -->
+
+<html>
+  <head>
+    <style>
+      .my-div {
+        color: red;
+      }
+
+      .my-div {
+        color: blue;
+      }
+
+      /* In this case, the text "Hello, world!" will be displayed in blue, because the second .my-div rule appears after the first one, and thus overrides it. */
+
+      /* And Swap */
+
+      /* .my-div {
+        color: blue;
+      }
+
+      .my-div {
+        color: red;
+      } */
+
+      /* The text would be displayed in red, because the second .my-div rule still appears after the first one and thus takes precedence. */
+    </style>
+  </head>
+  <div id="my-div" class="my-class">Hello, world!</div>
+</html>

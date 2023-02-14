@@ -1,0 +1,113 @@
+<!-- Create a HTML page with a variety of different elements, such as headings, paragraphs, lists, images, etc. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Sample HTML Page</title>
+    <style>
+      /* Element Type Selector */
+      h2 {
+        font-size: 24px;
+        font-family: Arial, sans-serif;
+        color: darkblue;
+      }
+
+      p {
+        font-size: 16px;
+        font-family: Times New Roman, serif;
+        color: grey;
+      }
+
+      img {
+        border: 1px solid black;
+        padding: 10px;
+        width: 200px;
+      }
+
+      /* Class Selector */
+      .highlight {
+        background-color: lightyellow;
+        padding: 10px;
+        border-radius: 10px;
+      }
+
+      /* ID Selector */
+      #section3 {
+        background-color: lightgray;
+        padding: 20px;
+      }
+
+      /* Pseudo-Class */
+      ul li:hover {
+        background-color: lightblue;
+        color: white;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>My Sample HTML Page</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#section1">Section 1</a></li>
+        <li><a href="#section2">Section 2</a></li>
+        <li><a href="#section3">Section 3</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section id="section1">
+        <h2>Section 1</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent sit
+          amet libero vitae dui sollicitudin feugiat eu non erat. In hac
+          habitasse platea dictumst. Proin eget ipsum mollis, viverra sem a,
+          commodo nunc. Integer laoreet enim vel mauris congue, vel commodo
+          lorem laoreet. Nam vel sem euismod, rutrum leo a, tincidunt metus.
+          Proin aliquam elit at justo tincidunt, non commodo nulla fringilla.
+          Fusce auctor sem vel dolor blandit, vel molestie quam fringilla.
+          Aliquam erat volutpat.
+        </p>
+      </section>
+
+      <section id="section2">
+        <h2>Section 2</h2>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+        <p>
+          Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+          posuere cubilia curae; Nam at nisi nec risus pharetra faucibus eu
+          euismod diam. Aliquam bibendum congue libero, at pellentesque magna
+          convallis non. Proin eget tellus vitae nibh congue convallis id id
+          risus. Nam luctus varius magna, vel blandit velit bibendum vel. Nam
+          vel velit vel sem posuere malesuada.
+        </p>
+      </section>
+
+      <section id="section3">
+        <h2>Section 3</h2>
+        <p><img src="image.jpg" alt="A sample image" /></p>
+        <p>
+          Mauris dapibus, neque a fringilla blandit, dolor enim faucibus nibh,
+          id vestibulum urna magna eu erat. Nulla facilisi. Nulla facilisi.
+          Nullam auctor sapien vel risus bibendum congue. Maecenas in diam ut
+          velit tincidunt malesuada vel in elit. Sed euismod nunc id nulla
+          fringilla, ac auctor nisi scelerisque. Integer a enim at mi feugiat
+          congue. Duis congue odio euismod orci varius, in aliquet velit sagitt,
+          at pellentesque magna congue.
+        </p>
+        <ul>
+          <li>Item 1</li>
+          <li>Item 2</li>
+          <li>Item 3</li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>

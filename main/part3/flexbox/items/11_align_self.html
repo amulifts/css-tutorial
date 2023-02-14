@@ -1,0 +1,77 @@
+<!-- 
+    The align-self property is used to override the align-items property for a single flex item.
+    It takes the same values as align-items, including the default value of stretch.
+    1. stretch : The default value. The flex item is stretched to fill the cross-axis of the flex container.
+    2. center : The flex item is centered along the cross-axis of the flex container.
+    3. flex-start : The flex item is aligned to the start of the cross-axis of the flex container.
+    4. flex-end : The flex item is aligned to the end of the cross-axis of the flex container.
+    5. baseline : The flex item is aligned to the baseline of the cross-axis of the flex container.
+
+    Similar to align-self, the justify-self property is used to override the justify-items property for a single flex item.
+ -->
+
+<html>
+  <head>
+    <style>
+      .flex-container {
+        margin: 50px auto;
+        background-color: rgb(231, 197, 197);
+        width: 700px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .flex-item1 {
+        align-self: self-start;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+      }
+
+      .flex-item2 {
+        align-self: self-end;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        align-self: stretch;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+
+      .flex-item4 {
+        align-self: center;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+      }
+
+      .flex-item5 {
+        align-self: baseline;
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(169, 229, 207);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item1">start</div>
+      <div class="flex-item2">end</div>
+      <div class="flex-item3">stretch (default)</div>
+      <div class="flex-item4">center</div>
+      <div class="flex-item5">baseline</div>
+    </div>
+  </body>
+</html>

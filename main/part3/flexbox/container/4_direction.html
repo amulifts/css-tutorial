@@ -1,0 +1,49 @@
+<!-- 
+    Flexbox direction have 4 values:
+        row: default value, items are placed in a row
+        row-reverse: items are placed in a row, but in reverse order and is placed from right to left
+        column: items are placed in a column
+        column-reverse: items are placed in a column, but in reverse order
+-->
+
+<!-- 
+    Change the flex-direction property to row-reverse, column, and column-reverse to see the difference.
+-->
+<html>
+  <head>
+    <style>
+      .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="flex-container">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!-- Try to create a simple navigation bar using CSS. Use class and id selectors to style the navigation links and active states. -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #navbar {
+        background-color: lightgray;
+        display: flex;
+        justify-content: space-between;
+        padding: 20px;
+      }
+
+      .nav-link {
+        color: black;
+        text-decoration: none;
+        margin-right: 20px;
+      }
+
+      .nav-link:hover {
+        color: blue;
+      }
+
+      #active-link {
+        color: blue;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="navbar">
+      <a href="#" class="nav-link" id="active-link">Home</a>
+      <a href="#" class="nav-link">About</a>
+      <a href="#" class="nav-link">Contact</a>
+    </div>
+    <p>Here's some content for you to enjoy...</p>
+  </body>
+</html>
+<!-- 
+In this example, we're using a div element with an id selector of #navbar to create the navigation bar. The links in the navigation bar are represented by a elements with a class selector of .nav-link.
+
+The .nav-link selector sets the basic style for the links, such as the color and text decoration. The .nav-link:hover selector sets the style for when the mouse is hovered over a link.
+
+We're also using an id selector #active-link to style the active link, which is the link that represents the current page the user is on. In this example, the "Home" link is set as the active link.
+
+You can try experimenting with different styles and layout options to create the navigation bar that meets your needs.
+-->

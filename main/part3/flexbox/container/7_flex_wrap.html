@@ -1,0 +1,122 @@
+<!-- 
+    The flex-wrap property accepts the following values:
+    1. nowrap: default value and all flex items are displayed in a single line / it prevents the flex items from wrapping onto a new line.
+    2. wrap: flex items wrap onto multiple lines / This allows the flex items to wrap onto a new line if there isn't enough space along the main axis of the container.
+    3. wrap-reverse: This allows the flex items to wrap onto a new line, but in reverse order from the main axis. The first item on the new line will be the last item on the previous line.
+
+    Important:
+    'flex-wrap' property is useful when you have a lot of items that can't fit within the width of the container.
+    By default, the flex items will try to squeeze into the container and may overflow or become too small.
+    But by using flex-wrap, you can allow the items to wrap onto new lines and create a more readable layout.
+
+    Note:
+    flex-wrap property only affects the main axis of the container. The cross-axis behavior is determined by the align-content property.
+-->
+
+<html>
+  <head>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      .flex-container {
+        background-color: rgb(231, 197, 197);
+        width: 700px;
+        height: 150px;
+        display: flex;
+        flex-direction: row;
+      }
+
+      .wrap {
+        margin: 10px auto;
+        flex-wrap: wrap;
+      }
+
+      .no-wrap {
+        margin: 10px auto;
+        flex-wrap: nowrap;
+      }
+
+      #rev {
+        margin-top: 100px;
+        text-align: center;
+      }
+      .wrap-reverse {
+        margin: 100px auto;
+        flex-wrap: wrap-reverse;
+      }
+
+      .flex-item1 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(180, 222, 175);
+      }
+
+      .flex-item2 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(175, 202, 222);
+      }
+
+      .flex-item3 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(213, 175, 222);
+      }
+
+      .flex-item4 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 204, 175);
+      }
+
+      .flex-item5 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(214, 175, 222);
+      }
+
+      .flex-item6 {
+        margin: 10px;
+        width: 100px;
+        height: 100px;
+        background-color: rgb(222, 175, 183);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Flexbox no-wrap (default)</h1>
+    <div class="flex-container no-wrap">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+      <div class="flex-item4"></div>
+      <div class="flex-item5"></div>
+      <div class="flex-item6"></div>
+    </div>
+    <h1>Flexbox wrap</h1>
+    <div class="flex-container wrap">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+      <div class="flex-item4"></div>
+      <div class="flex-item5"></div>
+      <div class="flex-item6"></div>
+    </div>
+    <h1 id="rev">Flexbox wrap-reverse</h1>
+    <div class="flex-container wrap-reverse">
+      <div class="flex-item1"></div>
+      <div class="flex-item2"></div>
+      <div class="flex-item3"></div>
+      <div class="flex-item4"></div>
+      <div class="flex-item5"></div>
+      <div class="flex-item6"></div>
+    </div>
+  </body>
+</html>
