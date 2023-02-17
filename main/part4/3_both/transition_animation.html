@@ -1,0 +1,127 @@
+<html>
+  <head>
+    <style>
+      .card {
+        display: flex;
+        flex-direction: row;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        /* display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-gap: 20px;
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease, box-shadow 0.3s ease; */
+      }
+
+      .card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+      }
+
+      .card-img img {
+        width: 100%;
+        height: auto;
+      }
+
+      .card-content {
+        padding: 20px;
+      }
+
+      .card-content h3 {
+        margin: 0;
+        padding: 0;
+        font-size: 20px;
+        font-weight: 600;
+        color: #333;
+      }
+
+      .card-content p {
+        margin: 10px 0;
+        font-size: 16px;
+        line-height: 1.5;
+        color: #666;
+      }
+
+      .card-content a {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #333;
+        color: #fff;
+        border-radius: 25px;
+        text-decoration: none;
+        margin-top: 10px;
+        font-size: 16px;
+        transition: background-color 0.3s ease;
+      }
+
+      .card-content a:hover {
+        background-color: #f44336;
+        animation: shake 0.5s ease;
+      }
+
+      @keyframes shake {
+        0% {
+          transform: translateX(0);
+        }
+        10% {
+          transform: translateX(-5px);
+        }
+        20% {
+          transform: translateX(5px);
+        }
+        30% {
+          transform: translateX(-5px);
+        }
+        40% {
+          transform: translateX(5px);
+        }
+        50% {
+          transform: translateX(-5px);
+        }
+        60% {
+          transform: translateX(5px);
+        }
+        70% {
+          transform: translateX(-5px);
+        }
+        80% {
+          transform: translateX(5px);
+        }
+        90% {
+          transform: translateX(-5px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <div class="card-img">
+        <img
+          src="https://images.unsplash.com/photo-1676573781704-af512552ab60?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzfHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=600&q=60"
+          alt="Image"
+        />
+      </div>
+      <div class="card-content">
+        <h3>Card Title</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+          mollis bibendum mauris eu tristique.
+        </p>
+        <a href="#">Read More</a>
+      </div>
+    </div>
+  </body>
+</html>

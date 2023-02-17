@@ -1,0 +1,55 @@
+<!--
+    Here's a brief overview of some of the key animation properties you can use:
+    
+    1. animation-name: This property specifies the name of the keyframe animation that should be applied.
+    2. animation-duration: This property sets the length of time that the animation should take to complete.
+    3. animation-timing-function: This property determines how the animation progresses through its keyframes. It can be set to values like ease, linear, ease-in, ease-out, and ease-in-out, among others.
+    4. animation-delay: This property specifies how long to wait before starting the animation.
+    5. animation-iteration-count: This property sets the number of times the animation should run.
+    6. animation-direction: This property sets whether the animation should play forwards, backwards, or alternate back and forth between the two.
+    7. animation-fill-mode: This property determines what styles should be applied to the element before and after the animation plays. It can be set to values like forwards, backwards, both, and none.
+    8. animation-play-state: This property allows you to pause or resume an animation, or set it to run in slow motion.
+
+    There are also some additional properties that can be used to fine-tune animations, such as animation-delay, animation-iteration-count, and animation-direction.
+ -->
+
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: blue;
+        animation-name: slide;
+        animation-duration: 2s;
+        animation-timing-function: ease-in-out;
+        animation-iteration-count: infinite;
+        animation-direction: alternate;
+      }
+
+      @keyframes slide {
+        0% {
+          transform: translateX(0);
+        }
+        50% {
+          transform: translateX(100px);
+        }
+        100% {
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
+
+<!--
+    The animation-name property is set to slide, which is the name of the keyframe animation that we define later in the CSS.
+    The animation-duration property is set to 2s, which means that the animation will last for 2 seconds.
+    The animation-timing-function property is set to ease-in-out, which defines the speed curve of the animation. In this case, the animation starts slowly, accelerates through the middle, and slows down again at the end.
+    The animation-iteration-count property is set to infinite, which means that the animation will repeat forever.
+    The animation-direction property is set to alternate, which means that the animation will alternate between moving to the right and back to the left.
+    Finally, we define the slide keyframe animation using the @keyframes rule. This animation moves the box element to the right by 100 pixels and back to its original position over the course of the animation.
+-->

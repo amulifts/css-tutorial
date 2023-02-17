@@ -1,0 +1,37 @@
+<!--
+    Direction
+    animation-direction: normal | reverse | alternate | alternate-reverse;
+    normal: The animation should play in the normal direction (forwards).
+    reverse: The animation should play in the reverse direction (backwards).
+    alternate: The animation should play forwards, then backwards, then forwards, and so on.
+    alternate-reverse: The animation should play backwards, then forwards, then backwards, and so on.
+ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        animation-name: myanimation;
+        animation-duration: 2s;
+        animation-direction: alternate; /* normal | reverse | alternate | alternate-reverse; */
+        animation-iteration-count: infinite;
+      }
+
+      @keyframes myanimation {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(200px);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>

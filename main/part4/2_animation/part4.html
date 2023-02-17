@@ -1,0 +1,52 @@
+<!--
+    Animation play state property
+    animation-play-state: running | paused;
+-->
+
+<html>
+  <head>
+    <style>
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        animation: move 2s infinite;
+      }
+
+      @keyframes move {
+        from {
+          transform: translateX(0);
+        }
+        to {
+          transform: translateX(100px);
+        }
+      }
+
+      button {
+        margin-top: 10px;
+      }
+
+      #pause {
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <button id="play">Play</button>
+    <button id="pause">Pause</button>
+  </body>
+  <script>
+    const box = document.querySelector(".box");
+    const play = document.querySelector("#play");
+    const pause = document.querySelector("#pause");
+
+    play.addEventListener("click", () => {
+      box.style.animationPlayState = "running";
+    });
+
+    pause.addEventListener("click", () => {
+      box.style.animationPlayState = "paused";
+    });
+  </script>
+</html>

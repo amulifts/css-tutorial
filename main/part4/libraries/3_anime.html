@@ -1,0 +1,34 @@
+<!-- Three Square boxes animation using Anime.js -->
+
+<html>
+  <head>
+    <style>
+      .box {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script>
+      const boxes = document.querySelectorAll(".box");
+      const tl = anime.timeline({
+        loop: true,
+        direction: "alternate",
+        easing: "easeInOutSine",
+        duration: 1000,
+      });
+      tl.add({
+        targets: boxes,
+        translateX: 200,
+        delay: anime.stagger(100),
+      });
+    </script>
+  </body>
+</html>

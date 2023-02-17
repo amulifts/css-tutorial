@@ -1,0 +1,27 @@
+<!-- Velocity.js is a JavaScript animation engine with the same API as jQuery's $.animate(). 
+    In JQuery, $.animate() is used to create custom animations on any numeric CSS property.
+    Similarly, Velocity.js can be used to create custom animations on any numeric CSS property.
+    Velocity is an animation engine with the same API as jQuery's $.animate(). It works with and without jQuery.
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Velocity.js Animation Demo</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
+  </head>
+  <body>
+    <div
+      id="box"
+      style="width: 100px; height: 100px; background-color: blue"
+    ></div>
+
+    <script>
+      $(document).ready(function () {
+        $("#box").velocity({ opacity: 0.5 }, { duration: 2000 });
+      });
+    </script>
+  </body>
+</html>

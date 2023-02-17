@@ -1,0 +1,26 @@
+<!-- Three Square boxes animation using greensock -->
+
+<html>
+    <head>
+        <style>
+            .box {
+                width: 50px;
+                height: 50px;
+                background-color: red;
+                margin: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script>
+            const boxes = document.querySelectorAll(".box");
+            const tl = gsap.timeline({repeat: -1, repeatDelay: 1});
+            tl.to(boxes, {duration: 1, x: 200, stagger: 0.2});
+            tl.to(boxes, {duration: 1, x: 0, stagger: 0.2});
+        </script>
+    </body>
+</html>
