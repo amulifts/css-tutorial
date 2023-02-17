@@ -1,0 +1,89 @@
+<!-- 
+    Transition property accepts 4 values:
+        1. Property
+            - background-color
+            - border
+            - border-radius
+            - border-shadow
+            - color
+            - height
+            - left
+            - opacity
+            - padding
+            - transform
+            - width
+            - etc.
+        2. Duration - geenrally time is in seconds
+        3. Timing function
+            - ease - is like ease-in-out, except it starts slightly faster than it ends.
+            - ease-in - will start the transition slowly, and finish at full speed.
+            - ease-out - will start the transition at full speed, then finish slowly.
+            - ease-in-out - will start slowly, be fastest at the middle of the transition, then finish slowly.
+            - linear - will start and finish at the same speed / uses no easing.
+            - cubic-bezier(n,n,n,n) - allows you to define your own timing function.
+                - n = 0 to 1
+                where n defines the position of the control point on the x-axis.
+        4. Delay
+-->
+
+<html>
+  <head>
+    <style>
+      .container {
+        border: 2px solid slateblue;
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+      }
+
+      .box {
+        width: 100px;
+        height: 100px;
+        background: rgb(230, 147, 147);
+      }
+
+      .box:hover {
+        background: rgb(224, 230, 147);
+      }
+
+      .ease {
+        transition: background 2s ease;
+      }
+
+      .easein {
+        transition: background 2s ease-in;
+      }
+
+      .easeout {
+        transition: background 2s ease-out;
+      }
+
+      .easeinout {
+        transition: background 2s ease-in-out;
+      }
+
+      .linear {
+        transition: background 2s linear;
+      }
+
+      .cubic {
+        transition: background 2s cubic-bezier(0.075, 0.82, 0.165, 1);
+        /* Here 1st n is 0.075 means 7.5% of the total time
+            2nd n is 0.82 means 82% of the total time
+            3rd n is 0.165 means 16.5% of the total time
+            4th n is 1 means 100% of the total time
+        */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box ease"></div>
+      <div class="box easein"></div>
+      <div class="box easeout"></div>
+      <div class="box easeinout"></div>
+      <div class="box linear"></div>
+      <div class="box cubic"></div>
+    </div>
+  </body>
+</html>

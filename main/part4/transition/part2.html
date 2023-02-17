@@ -1,0 +1,36 @@
+<!-- 
+    Trigerring the transition
+    To trigger transitions on events like:
+    - hover, focus, and click, you can use the :hover, :focus, and :active pseudo-classes in combination with the transition property.
+-->
+
+<html>
+  <head>
+    <style>
+      button {
+        background-color: blue;
+        color: white;
+        padding: 10px;
+        transition: background-color 0.5s ease;
+      }
+
+      button:hover {
+        background-color: red;
+      }
+
+      input[type="text"] {
+        border: 1px solid #ccc;
+        transition: border-color 6s ease;
+      }
+
+      input[type="text"]:focus {
+        border-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <button>Hover me</button>
+
+    <input type="text" placeholder="Focus me" />
+  </body>
+</html>
