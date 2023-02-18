@@ -1,0 +1,85 @@
+<!-- Grid container: -->
+
+<div class="container">
+  <!-- Grid rows and columns go here -->
+</div>
+
+<!-- This creates a grid container with a fixed width that centers the content within the container. -->
+
+<!-- Grid rows: -->
+
+<div class="container">
+  <div class="row">
+    <!-- Grid columns go here -->
+  </div>
+</div>
+
+<!-- This creates a grid row that contains one or more grid columns. The row class is used to create a horizontal group of columns. -->
+
+<!-- Grid columns: -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <!-- Content for first column goes here -->
+    </div>
+    <div class="col-6">
+      <!-- Content for second column goes here -->
+    </div>
+  </div>
+</div>
+
+<!-- This creates a grid row with two equal-width columns. The col-6 class is used to set the width of each column to 50% of the row. -->
+
+<!-- Column ordering: -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 order-md-2">
+      <!-- Content for first column goes here -->
+    </div>
+    <div class="col-md-6 order-md-1">
+      <!-- Content for second column goes here -->
+    </div>
+  </div>
+</div>
+
+<!-- This creates a grid row with two equal-width columns that are reversed on medium-sized screens (md) and above. The order-md-2 and order-md-1 classes are used to reverse the order of the columns. -->
+
+<!-- Column offsets: -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 offset-md-2">
+      <!-- Content for first column goes here -->
+    </div>
+    <div class="col-md-4">
+      <!-- Content for second column goes here -->
+    </div>
+  </div>
+</div>
+
+<!-- This creates a grid row with two columns, where the first column has an offset of 2 columns on medium-sized screens (md) and above. The offset-md-2 class is used to add 2 columns of empty space before the first column. -->
+
+<!-- Nesting columns: -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6">
+          <!-- Content for first nested column goes here -->
+        </div>
+        <div class="col-md-6">
+          <!-- Content for second nested column goes here -->
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <!-- Content for second column goes here -->
+    </div>
+  </div>
+</div>
+
+<!-- This creates a grid row with two columns, where the first column contains a nested row with two equal-width columns. The row class is used to create a new grid row inside the first column, and then two col-md-6 classes are used to create two equal-width columns within the nested row. -->
+
