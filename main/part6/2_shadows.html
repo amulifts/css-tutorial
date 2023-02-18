@@ -1,0 +1,68 @@
+<!--
+    - Shadows can add depth and dimension to elements in a web page, making them appear more three-dimensional.
+    There are generally two types of shadows:
+        - Box shadows - applied to the box of an element
+        - Text shadows - applied to the text within an element
+    The box-shadow property takes values for:
+        - horizontal offset
+        - vertical offset
+        - blur radius
+        - spread radius
+        - color
+    The text-shadow property takes values for:
+        - horizontal offset
+        - vertical offset
+        - blur radius
+        - color
+-->
+
+<html>
+    <head>
+        <style>
+            .container {
+                width: 200px;
+                height: 100px;
+                background-color: lightgray;
+                margin: auto;
+                padding: 20px;
+                /* overflow: hidden; */
+                box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.5);
+                /* horizontal offset, vertical offset, blur radius, spread radius, color */
+                /* offset refers to the distance between the shadow and the element that is casting the shadow. 
+                    - Horizontal offset: The distance between the shadow and the element on the x-axis. A positive value moves the shadow to the right, and a negative value moves it to the left.
+                    - Vertical offset: The distance between the shadow and the element on the y-axis. A positive value moves the shadow downwards, and a negative value moves it upwards.
+                */
+            }
+
+            .container2 {
+                width: 200px;
+                height: 100px;
+                background-color: lightgray;
+                margin: auto;
+                padding: 20px;
+                text-shadow: 10px 10px 5px rgba(0, 0, 0, 0.5);
+                /* horizontal offset, vertical offset, blur radius, color */
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Box Shadow</h1>
+        <div class="container">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, rerum?
+                Cupiditate laboriosam provident dolor aliquid reprehenderit aperiam
+                impedit temporibus ex distinctio quis quo, asperiores cum, itaque
+                delectus, maxime optio mollitia.
+            </p>
+        </div>
+        <h1>Text Shadow</h1>
+        <div class="container2">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, rerum?
+                Cupiditate laboriosam provident dolor aliquid reprehenderit aperiam
+                impedit temporibus ex distinctio quis quo, asperiores cum, itaque
+                delectus, maxime optio mollitia.
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,109 @@
+<!--
+    - Gradient allows you to create smooth transitions between two or more colors.
+    There are generally two types of gradients:
+        - Linear gradients - create a transition from one color to another in a straight line,
+        - Radial gradients - create a transition in a circular or elliptical shape.
+-->
+
+<html>
+  <head>
+    <style>
+      .container {
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin: auto;
+        padding: 20px;
+        /* overflow: hidden; */
+        background-image: linear-gradient(
+          to right,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+        /* 
+            - The first value is the direction of the gradient.
+            - The second value is the color of the gradient.
+            - The third value is the color of the gradient.
+            - The fourth value is the color of the gradient.
+            - The fifth value is the color of the gradient.
+            - The sixth value is the color of the gradient.
+            - The seventh value is the color of the gradient.
+        */
+        /* We can use the following values for the direction of the gradient:
+            - to right
+            - to left
+            - to top
+            - to bottom
+            - to top right
+            - to top left
+            - to bottom right
+            - to bottom left
+        */
+      }
+
+      .container2 {
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin: auto;
+        padding: 20px;
+        background-image: radial-gradient(
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      }
+      /* 
+        - The first value is the color of the gradient.
+        - The second value is the color of the gradient.
+        - The third value is the color of the gradient.
+        - The fourth value is the color of the gradient.
+        - The fifth value is the color of the gradient.
+        - The sixth value is the color of the gradient.
+        - The seventh value is the color of the gradient.
+        */
+
+      /* We can also use the following values for the direction of the gradient:
+            - circle
+            - ellipse
+            - closest-side
+            - closest-corner
+            - farthest-side
+            - farthest-corner
+        */
+
+      /* .container2 {
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin: auto;
+        padding: 20px;
+        background-image: radial-gradient(
+          circle at center,
+          red,
+          orange,
+          yellow,
+          green,
+          blue,
+          indigo,
+          violet
+        );
+      } */
+    </style>
+  </head>
+  <body>
+    <h1>Linear Gradient</h1>
+    <div class="container"></div>
+    <h1>Radial Gradient</h1>
+    <div class="container2"></div>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+<!--
+    Media queries are a CSS technique used to apply different styles to a web page based on various factors such as the device width, screen resolution, and orientation.
+    It allows you to create responsive web pages that adapt to the screen size of the device being used to view the page.
+
+    Some of the key points to remember about media queries are:
+    1. Syntax:
+        @media media_type and (media_feature: media_value) {
+            CSS rules
+        }
+    2. Media types:
+        a. all: applies to all media types
+        b. screen: applies to computer screens, tablets, smart phones, etc.
+        c. print: Applies to print media, such as printers or PDFs.
+        d. speech: Applies to screen readers and similar devices used for text-to-speech.
+    3. Media features:
+        - aspect-ratio: Specifies the ratio of the width to height of the viewport.
+        - color: Specifies the number of bits per color component for the output device.
+        - color-gamut: Specifies the color gamut of the output device.
+        - device-aspect-ratio: Specifies the ratio of the width to height of the output device.
+        - device-height: Specifies the height of the output device.
+        - device-width: Specifies the width of the output device.
+        - grid: Specifies whether the device can handle grid-based layouts.
+        - height: Specifies the height of the viewport.
+        - hover: Specifies whether the device has a pointing device capable of hovering over elements.
+        - inverted-colors: Specifies whether the device is capable of displaying inverted colors.
+        - monochrome: Specifies the number of bits per pixel in a monochrome frame buffer.
+        - orientation: Specifies the orientation of the viewport.
+        - overflow-block: Specifies whether the device allows for vertical scrolling.
+        - overflow-inline: Specifies whether the device allows for horizontal scrolling.
+        - pointer: Specifies the accuracy of the pointing device used to interact with the output device.
+        - prefers-color-scheme: Specifies the preferred color scheme of the user or device.
+        - prefers-contrast: Specifies the preferred contrast mode of the user or device.
+        - prefers-reduced-motion: Specifies whether the user or device prefers reduced motion.
+        - prefers-reduced-transparency: Specifies whether the user or device prefers reduced transparency.
+        - resolution: Specifies the resolution of the output device.
+        - scan: Specifies the scanning process of the output device.
+        - scripting: Specifies whether the device supports scripting.
+        - update: Specifies whether the output device is capable of updating the display.
+        - width: Specifies the width of the viewport.
+    4. Media values:
+        a. length: a length value, such as 100px or 35em
+        b. resolution: a resolution value, such as 300dpi or 2dpcm
+        c. orientation: portrait or landscape
+        d. integer: an integer value, such as 2 or 256
+        e. ratio: a ratio value, such as 16/9
+        f. color: a color value, such as #ff0000 or rgb(255, 0, 0)
+        g. boolean: a boolean value, such as true or false
+        h. string: a string value, such as "dark" or "light"
+        i. identifier: an identifier value, such as "srgb" or "p3"
+        j. none: a none value, such as none
+    
+    Some important things to note about media queries are:
+    1. Mobile-first design: When using media queries, it's generally a good idea to start by designing for mobile devices first, and then add styles for larger screens as needed. This approach helps ensure that your website is optimized for smaller screens and can provide a better user experience overall.
+    2. Use appropriate breakpoints: Breakpoints are the specific screen sizes at which your media queries kick in, and it's important to choose appropriate breakpoints based on the content and layout of your website. Common breakpoints include 480px (for small mobile devices), 768px (for tablets), 992px (for laptops), and 1200px (for desktops), but you should choose breakpoints that make sense for your particular website.
+    3. Test your media queries: To ensure that your media queries are working as intended, it's important to test your website on a variety of devices and screen sizes. This can help you identify any issues with your layout or styling at different breakpoints and make necessary adjustments.
+    4. Use descriptive media query names: Naming your media queries descriptively can help make your code more readable and easier to maintain over time. For example, instead of using generic names like "tablet" or "desktop", you might use names that describe the specific content or layout changes that occur at that breakpoint (e.g., "large-hero-image").
+    5. Avoid overcomplicating your media queries: While it's important to use media queries to create responsive designs, it's also possible to overcomplicate your code by adding too many unnecessary breakpoints or styles. Try to keep your media queries simple and focused on the most important layout and styling changes for each screen size.
+-->

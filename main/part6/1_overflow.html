@@ -1,0 +1,53 @@
+<!--
+    - Overflow property is used to control how content that overflows the bounds of an element is displayed. 
+    By default, when content exceeds the dimensions of an element, it will be hidden or truncated.
+    However, you can use the overflow property to change this behavior and control how overflowed content is displayed.
+
+    Here are some posible values for the overflow property:
+        - visible: This is the default value and causes overflowed content to be visible outside of the element's bounds.
+        - hidden: This value causes overflowed content to be hidden and not visible outside of the element's bounds.
+        - scroll: This value adds a scrollbar to the element, allowing users to scroll through the overflowed content.
+        - auto: This value adds a scrollbar only when necessary (i.e., when content overflows the element's bounds).
+-->
+
+<html>
+  <head>
+    <style>
+      /* Uncomment the overflow property and see the difference */
+      .container {
+        width: 200px;
+        height: 100px;
+        background-color: lightgray;
+        margin: auto;
+        padding: 20px;
+        /* default value */
+        /* overflow: visible; */
+        /* content is hidden */
+        /* overflow: hidden; */
+        /* scrollbar is added */
+        /* overflow: scroll; */
+        /* scrollbar is added only when necessary */
+        /* overflow: auto; */
+
+        /* or */
+        /* horizontal overflow */
+        /* overflow-x: hidden; */
+        /* vertical overflow */
+        /* overflow-y: scroll; */
+
+        /* or */
+        /* overflow: hidden scroll; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, rerum?
+        Cupiditate laboriosam provident dolor aliquid reprehenderit aperiam
+        impedit temporibus ex distinctio quis quo, asperiores cum, itaque
+        delectus, maxime optio mollitia.
+      </p>
+    </div>
+  </body>
+</html>

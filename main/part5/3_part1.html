@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <style>
+      /* Default styles for all screen sizes (mobile devices) */
+      body {
+        font-size: 16px;
+        line-height: 1.5;
+      }
+
+      h1 {
+        font-size: 2em;
+        color: rgb(212, 255, 0);
+      }
+
+      p {
+        font-size: 1em;
+      }
+
+      /* Media query for screens larger than 768px which generally corresponds to tablet-sized devices and larger */
+      @media screen and (min-width: 768px) {
+        body {
+          font-size: 18px;
+        }
+
+        h1 {
+          font-size: 3em;
+          color: aqua;
+        }
+
+        p {
+          font-size: 1.2em;
+        }
+      }
+
+      /* Media query for screens larger than 1200px which generally corresponds to desktop-sized devices and larger */
+      @media screen and (min-width: 1200px) {
+        body {
+          font-size: 20px;
+        }
+
+        h1 {
+          font-size: 4em;
+          color: rgb(255, 0, 255);
+        }
+
+        p {
+          font-size: 1.4em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Media Queries</h1>
+    <p>
+      Media queries are a CSS3 feature that allow you to apply different styles
+      to your web page depending on the size of the screen or device that is
+      being used to view it.
+    </p>
+  </body>
+</html>
+
+<!--
+    This approach is known as mobile-first design, which involves starting with a design optimized for smaller screens and then using media queries to add styles for larger screens as needed.
+-->

@@ -1,0 +1,49 @@
+<!--
+    The transform property in CSS allows you to change the appearance and position of an element by applying various 2D or 3D transformations to it.
+
+    You can use the transform property to :
+        - Rotate an element
+        - Scale an element
+        - Translate an element
+        - Skew an element
+-->
+
+<html>
+  <head>
+    <style>
+      .image-container {
+        width: 600px;
+        height: 600px;
+        margin: auto;
+        overflow: hidden;
+      }
+
+      .image-container img {
+        transition: transform 0.5s;
+      }
+
+      /* Uncomment the transform property and see the difference. */
+      .image-container:hover img {
+        transform: scale(1.5);
+        /* transform: rotate(180deg); */
+        /* transform: translateX(100px); */
+        /* transform: skewX(30deg); */
+        /* transform: skewY(30deg); */
+        /* transform: skew(30deg, 30deg); */
+        /* transform: scale(1.5) rotate(180deg); */
+        /* transform: scale(1.5) translateX(100px); */
+        /* transform: scale(1.5) skewX(30deg); */
+        /* transform: scale(1.5) skewY(30deg); */
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Transform</h1>
+    <div class="image-container">
+      <img
+        src="https://images.unsplash.com/photo-1676688490104-882a5af42554?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+        alt="Image"
+      />
+    </div>
+  </body>
+</html>
