@@ -1,0 +1,27 @@
+<!--
+    CSS Variables, also known as CSS custom properties, allow you to define a value once and reuse it throughout your CSS code.
+    This makes it easier to maintain and update your CSS styles, especially when dealing with large and complex projects.
+-->
+
+<html>
+  <head>
+    <style>
+      /* Define variable is root pseudo-class, which represents top-level element of the document that ensures that the variable is available throughout the document. */
+
+      :root {
+        /* Double hyphen is used to define a variable. */
+        --main-color: rgb(202, 216, 151);
+      }
+
+      .box {
+        /* var() function is used to reference a variable. */
+        background-color: var(--main-color);
+        width: 100px;
+        height: 100px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"></div>
+  </body>
+</html>
