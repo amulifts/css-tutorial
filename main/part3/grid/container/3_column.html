@@ -14,6 +14,7 @@
   <head>
     <style>
       .grid-container {
+
         /* Uncomment all those properties one by one to see the effect. */
 
         display: grid;
@@ -25,11 +26,13 @@
 
         /* grid-template-columns: none; */
 
-        /* grid-template-columns: 33.33% 33.33% 33.33%; */
-
+        /* grid-template-columns: 100px 100px 100px; */
+        /* grid-template-columns: 1fr; */
+        /* grid-template-columns: 1fr 1fr; */
+        grid-template-columns: 1fr 1fr 1fr;
+        /* grid-template-columns: 1fr 1fr 1fr 1fr; */
         /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
-
-        grid-template-columns: repeat(5, 1fr);
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr; */
       }
 
       .grid-item {
