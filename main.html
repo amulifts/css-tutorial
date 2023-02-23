@@ -1,0 +1,49 @@
+<html>
+  <head>
+    <style>
+      .grid-container {
+        display: grid;
+        background-color: rgb(159, 214, 214);
+
+        /* grid-template-columns: 33.33% 33.33% 33.33%; */
+
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr; */
+
+        grid-template-columns: repeat(5,1fr);
+      }
+      .grid-item {
+        width: 100px;
+        height: 100px;
+      }
+
+      #one {
+        background-color: rgb(222, 164, 164);
+      }
+
+      #two {
+        background-color: rgb(154, 213, 154);
+      }
+
+      #three {
+        background-color: rgb(151, 151, 222);
+      }
+
+      #four {
+        background-color: rgb(222, 222, 151);
+      }
+
+      #five {
+        background-color: rgb(222, 151, 222);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid-container">
+      <div class="grid-item" id="one"></div>
+      <div class="grid-item" id="two"></div>
+      <div class="grid-item" id="three"></div>
+      <div class="grid-item" id="four"></div>
+      <div class="grid-item" id="five"></div>
+    </div>
+  </body>
+</html>
