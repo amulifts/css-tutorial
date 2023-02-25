@@ -16,11 +16,13 @@
         border: 4px solid yellowgreen;
         min-height: 850px;
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-        /* grid-template-columns: 1fr 1fr [headl] 1fr 1fr 1fr [headr] 1fr; */
+        /* grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr; */
+        /* Here [headl] and [headr] are named grid lines. [headl] is the start of the grid item and [headr] is the end of the grid item. */
+        grid-template-columns: 1fr 1fr [headl] 1fr 1fr 1fr [headr] 1fr;
         grid-template-rows: auto;
-        column-gap: 8px;
-        row-gap: 8px;
+        gap: 8px;
+        /* column-gap: 8px;
+        row-gap: 8px; */
       }
 
       .grid-items{
@@ -34,8 +36,8 @@
         /* grid-column-start: 3; */
         /* grid-column-end: 6; */
 
-        /* grid-row-start: 1;
-        grid-row-end: 3; */
+        /* grid-row-start: 1; */
+        /* grid-row-end: 3; */
 
 
         /* You can use the span keyword to specify the number of rows or columns that a grid item should span. */
